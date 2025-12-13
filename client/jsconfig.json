@@ -1,0 +1,11 @@
+{
+  "compilerOptions": {
+    "paths": {
+      "@/core/*": ["./src/core/*"],
+      "@/auth/*": ["./src/modules/auth/*"],
+      "@/dashboard/*": ["./src/modules/dashboard/*"],
+      "@/tour/*": ["./src/modules/tour/*"],
+      "@/shared/*": ["./src/shared/*"]
+    }
+  }
+}

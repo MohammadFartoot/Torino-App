@@ -1,0 +1,380 @@
+.searchBox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 874px;
+    height: 71px;
+    margin: 25px auto;
+    border-radius: 20px;
+    border: 1px solid #00000026;
+    padding: 15px 18px 15px 10px;
+    background-color: #FFFFFF70;
+    backdrop-filter: blur(8px);
+}
+
+.responsiveSearchBox {
+    display: none;
+}
+
+.originBoxWrapper {
+    width: 20%;
+    position: relative;
+}
+
+.originBox {
+    display: flex;
+    align-items: center;
+    padding: 8px;
+    gap: 8px;
+    margin-right: -10px;
+}
+
+.originBox input {
+    font-family: YekanBakh-Regular, Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    color: #2C2C2C;
+    border: none;
+    outline: none;
+}
+
+.originBox input::placeholder {
+    color: #2C2C2C;
+}
+
+.suggestedOrigins {
+    position: absolute;
+    top: 190%;
+    right: -10px;
+    background: #FFFFFF;
+    width: 190px;
+    height: fit-content;
+    border: 1px solid #00000033;
+    border-radius: 8px;
+    z-index: 10;
+    cursor: pointer;
+}
+
+.highTraffic {
+    width: 190px;
+    position: absolute;
+    top: 0;
+    right: -1px;
+    margin-top: -25px;
+    background-color: #f4f4f4;
+    border: 1px solid #00000033;
+    border-top-left-radius: 9px;
+    border-top-right-radius: 9px;
+}
+
+.highTraffic p {
+    font-family: Vazir-Light-FD-WOL, Arial, Helvetica, sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    margin-right: 5px;
+    padding: 5px;
+    color: #282828B2;
+}
+
+.suggestedBox {
+    padding: 5px;
+    border-bottom: 1px solid #0000001F;
+}
+
+.suggestedBox:last-child {
+    border-bottom: none;
+}
+
+.suggestedNames {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 5px;
+}
+
+.suggestedNames:hover {
+    background-color: #eeeeee;
+    border-radius: 10px;
+}
+
+.suggestedNames p {
+    font-family: YekanBakh-Regular, Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 17px;
+    color: #282828;
+}
+
+.firstBlock {
+    width: 56px;
+    height: 1px;
+    background: #00000033;
+    rotate: -90deg;
+}
+
+.destinationBoxWrapper {
+    width: 20%;
+    position: relative;
+}
+
+.destinationBox {
+    display: flex;
+    align-items: center;
+    padding: 8px;
+    gap: 8px;
+    margin-right: -20px;
+}
+
+.destinationBox input {
+    font-family: YekanBakh-Regular, Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    color: #2C2C2C;
+    border: none;
+    outline: none;
+}
+
+.destinationBox input::placeholder {
+    color: #2C2C2C;
+}
+
+.suggestedDestinations {
+    position: absolute;
+    top: 140%;
+    right: -20px;
+    background: #FFFFFF;
+    width: 195px;
+    height: fit-content;
+    border: 1px solid #00000033;
+    border-radius: 8px;
+    z-index: 10;
+    cursor: pointer;
+}
+
+.secondBlock {
+    width: 56px;
+    height: 1px;
+    background: #00000033;
+    rotate: -90deg;
+    margin-right: 25px;
+}
+
+.dateBox {
+    display: flex;
+    align-items: center;
+    padding: 8px;
+    gap: 8px;
+    width: 24%;
+    margin-right: -20px;
+    font-family: YekanBakh-Regular, Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    color: #2C2C2C;
+}
+
+.dateBox p {
+    font-family: YekanBakh-Regular, Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    color: #2C2C2C;
+}
+
+.calendarPose {
+    position: absolute;
+    top: 20px;
+    left: 26%;
+}
+
+.searchBtn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 190px;
+    height: 51px;
+    border-radius: 16px;
+    background-color: #28A745;
+    padding: 8px;
+    cursor: pointer;
+}
+
+.searchBtn p {
+    display: flex;
+    align-items: center;
+    font-family: YekanBakh-Regular, Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    font-size: 21px;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+.mobileSearchBtn {
+    display: none;
+}
+
+@media (max-width: 900px) {
+    .searchBox {
+        display: none;
+    }
+    .responsiveSearchBox {
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+        gap: 10px;
+    }
+    .hidden {
+        display: none;
+    }
+    .pathWrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 8px;
+    }
+    .orgBox {
+        display: flex;
+        align-items: center;
+        position: relative;
+    }
+    .orgImg {
+        position: absolute;
+        right: 30%;
+    }
+    .orgBox input, .desBox input {
+        width: 160px;
+        height: 47px;
+        border-radius: 12px;
+        border: 1px solid #00000026;
+        padding: 10px;
+        font-family: YekanBakh-Regular, Arial, Helvetica, sans-serif;
+        font-size: 16px;
+        font-weight: 400;
+        color: #2C2C2C;
+        outline: none;
+    }
+    .centerPose {
+        text-align: center;
+    }
+    .orgBox input::placeholder {
+        position: absolute;
+        right: 75px;
+    }
+    .suggestedOrigins {
+        width: 160px;
+        height: fit-content;
+        position: absolute;
+        top: 170%;
+        right: 0;
+    }
+    .highTraffic {
+        width: 160px;
+    }
+    .highTraffic p {
+        font-size: 12.5px;
+    }
+    .suggestedNames img {
+        width: 19px;
+        height: 19px;
+    }
+    .suggestedNames p {
+        font-size: 14px;
+    }
+    .desBox {
+        display: flex;
+        align-items: center;
+        position: relative;
+    }
+    .desImg {
+        position: absolute;
+        right: 25%;
+    }
+    .desBox input::placeholder {
+        position: absolute;
+        right: 70px;
+    }
+    .suggestedDestinations {
+        width: 160px;
+        height: fit-content;
+        position: absolute;
+        top: 120%;
+        right: 0;
+    }
+    .calendarBox {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+        position: relative;
+        width: 328px;
+        height: 47px;
+        border: 1px solid #00000026;
+        border-radius: 12px;
+        padding: 10px;
+        font-family: YekanBakh-Regular, Arial, Helvetica, sans-serif;
+        font-size: 15px;
+        font-weight: 400;
+        outline: none;
+        text-align: center;
+    }
+    .calendarBox input {
+        width: 100%;
+    }
+    .calendarBox img {
+        position: absolute;
+        top: 30%;
+        right: 40%;
+    }
+    .calendarBox p {
+        font-family: YekanBakh-Regular, Arial, Helvetica, sans-serif;
+        font-size: 16px;
+        font-weight: 400;
+        color: #8D7D7D;
+        z-index: 2;
+        position: absolute;
+        top: 22%;
+        right: 50%;
+    }
+    .calendarPose {
+        position: absolute;
+        top: 20px;
+        right: -2%;
+    }
+    .mobileSearchBtn {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 20px auto;
+        width: 328px;
+        height: 47px;
+        border-radius: 16px;
+        padding: 8px;
+        background-color: #28A745;
+        cursor: pointer;
+    }
+    .mobileSearchBtn p {
+        display: flex;
+        align-items: center;
+        font-family: YekanBakh-Regular, Arial, Helvetica, sans-serif;
+        font-weight: 400;
+        font-size: 20px;
+        color: #FFFFFF;
+        text-align: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .calendarPose {
+        position: absolute;
+        top: 100px;
+        right: -2%;
+        z-index: 2;
+    }
+}
+
+@media (max-width: 480px) {
+    .calendarPose {
+        position: absolute;
+        top: 60px;
+        left: 0;
+        right: 0;
+    }
+}

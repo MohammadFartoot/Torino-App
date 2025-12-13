@@ -1,0 +1,10 @@
+.mainLink {
+    font-family: YekanBakh-Regular, Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    text-decoration: none;
+    color: #28A745;
+    border: none;
+    background: none;
+    cursor: pointer;
+}

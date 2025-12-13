@@ -1,0 +1,95 @@
+.hamburgerMenuIcon {
+    display: none;
+}
+
+@media (max-width: 900px) {
+    .hamburgerMenuIcon {
+        display: inline-block;
+    }
+    .backDrop {
+        position: fixed;
+        inset: 0;
+        backdrop-filter: blur(2px);
+        background-color: rgba(0, 0, 0, 0.3);
+        z-index: 1;
+    }
+    .menuContainer {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 209px;
+        height: 100vh;
+        gap: 22px;
+        border-radius: 12px;
+        padding: 32px 12px;
+        background-color: #FFFFFF;
+        box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.2);
+        animation: slideMenu 0.8s cubic-bezier(0.22, 0.61, 0.36, 1) forwards;
+        z-index: 2;
+    }
+    .mainPageBtn {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        cursor: pointer;
+        text-decoration: none;
+    }
+    .mainPageBtn p {
+        font-family: YekanBakh-Regular, Arial, Helvetica, sans-serif;
+        font-weight: 400;
+        font-size: 16px;
+        color: #28A745;
+    }
+    .tourServices {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        cursor: pointer;
+        text-decoration: none;
+    }
+    .tourServices p {
+        font-family: YekanBakh-Regular, Arial, Helvetica, sans-serif;
+        font-weight: 400;
+        font-size: 16px;
+        color: #282828;
+    }
+    .aboutUs {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        cursor: pointer;
+        text-decoration: none;
+    }
+    .aboutUs p {
+        font-family: YekanBakh-Regular, Arial, Helvetica, sans-serif;
+        font-weight: 400;
+        font-size: 16px;
+        color: #282828;
+    }
+    .callWithUs {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        cursor: pointer;
+        text-decoration: none;
+    }
+    .callWithUs p {
+        font-family: YekanBakh-Regular, Arial, Helvetica, sans-serif;
+        font-weight: 400;
+        font-size: 16px;
+        color: #282828;
+    }
+    @keyframes slideMenu {
+        from {
+            transform: translateX(100%);
+            opacity: 0;
+        }
+        to {
+            transform: translateX(0);
+            opacity: 1;
+        }
+    }
+}

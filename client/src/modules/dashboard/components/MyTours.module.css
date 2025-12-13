@@ -1,0 +1,413 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 872px;
+    height: 569px;
+    border: 1px solid #00000033;
+    border-radius: 10px;
+}
+
+.mobileContainer {
+    display: none;
+}
+
+.tourBox {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 832px;
+    height: 168px;
+    margin: 15px auto 0 auto;
+    border: 1px solid #00000033;
+    border-radius: 10px;
+}
+
+.firstInnerBox {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 220px;
+    margin: 15px auto;
+}
+
+.tourTitle {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.tourTitle p {
+    font-family: YekanBakh-Regular, Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: #000000;
+}
+
+.vehicleWrapper {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.vehicleWrapper p {
+    font-family: YekanBakh-Regular, Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: #000000;
+}
+
+.upComing {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 89px;
+    height: 20px;
+    background-color: #D1B9004D;
+    color: #D1B900;
+    border-radius: 27px;
+    font-family: YekanBakh-Regular, Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+}
+
+.finished {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 89px;
+    height: 20px;
+    background-color: #28A7454D;
+    color: #28A745;
+    border-radius: 27px;
+    font-family: YekanBakh-Regular, Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+}
+
+.secondInnerBox {
+    display: flex;
+    margin: 10px 20px 20px 20px;
+    gap: 120px;
+}
+
+.dateWrapper {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.dateWrapper p:first-child {
+    font-family: YekanBakh-SemiBold, Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    color: #000000;
+}
+
+.dateWrapper span {
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background-color: #00000099;
+}
+
+.dateWrapper p:last-child {
+    font-family: Vazir-FD-WOL, Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    color: #00000099;
+}
+
+.secondDateWrapper {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.secondDateWrapper span {
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background-color: #00000099;
+}
+
+.secondDateWrapper p:first-child {
+    font-family: YekanBakh-SemiBold, Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    color: #000000;
+}
+
+.secondDateWrapper p:last-child {
+    font-family: Vazir-FD-WOL, Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    color: #00000099;
+}
+
+.borderLine {
+    width: 830px;
+    border: 0.5px solid #00000033;
+}
+
+.thirdInnerBox {
+    display: flex;
+    align-items: center;
+    margin: 15px 20px;
+    gap: 8px;
+}
+
+.tourIdWrapper {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.tourIdWrapper p:first-child {
+    font-family: YekanBakh-Regular, Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: #00000080;
+}
+
+.tourIdWrapper p:last-child {
+    font-family: Vazir-FD-WOL, Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    color: #282828;
+}
+
+.secondBorderLine {
+    width: 30px;
+    rotate: -90deg;
+    border: 0.5px solid #00000033;
+}
+
+.priceWrapper {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.priceWrapper p:first-child {
+    font-family: YekanBakh-Regular, Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: #00000080;
+}
+
+.priceWrapper p:last-child {
+    font-family: Vazir-FD-WOL, Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    color: #282828;
+}
+
+.priceWrapper span {
+    font-family: Vazir-Light-FD-WOL, Arial, Helvetica, sans-serif;
+    font-weight: 300;
+    font-size: 11px;
+    color: #00000080;
+    margin: 0 5px;
+}
+
+@media (max-width: 900px) {
+    .container {
+        margin: 0 auto 30px auto;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        display: none;
+    }
+
+    .mobileContainer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+
+    .tourBox {
+        align-items: center;
+        width: 375px;
+        height: 210px;
+        margin: 0 auto 20px auto;
+    }
+
+    .tourStatusWrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .firstInnerBox {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 25px;
+        margin: 5px 40px 20px auto;
+    }
+
+    .tourTitle img {
+        width: 18px;
+        height: 18px;
+    }
+
+    .tourTitle p {
+        font-size: 12px;
+    }
+
+    .vehicleWrapper img {
+        width: 16px;
+        height: 16px;
+    }
+
+    .vehicleWrapper p {
+        font-size: 12px;
+    }
+
+    .upComing {
+        font-size: 10px;
+        width: 72px;
+        height: 20px;
+        margin-right: 280px;
+        margin-top: 10px;
+    }
+
+    .finished {
+        font-size: 6px;
+        width: 47px;
+        height: 15px;
+        margin-right: 300px;
+        margin-top: 10px;
+    }
+
+    .secondInnerBox {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin: 5px auto 20px auto;
+        gap: 25px;
+    }
+
+    .dateWrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 80px;
+    }
+
+    .dateWrapper div:first-child p {
+        white-space: nowrap;
+        font-size: 14px;
+        font-family: YekanBakh-SemiBold, Arial, Helvetica, sans-serif;
+        font-weight: 600;
+        color: #000000;
+    }
+
+    .dateWrapper div:last-child {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .dateWrapper div:last-child span {
+        display: flex;
+        align-items: center;
+        margin: 10px;
+    }
+
+    .dateWrapper div:last-child p {
+        white-space: nowrap;
+        font-size: 12px;
+        font-family: Vazir-FD-WOL, Arial, Helvetica, sans-serif;
+        font-weight: 400;
+        color: #00000099;
+    }
+
+    .secondDateWrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 101px;
+        margin: 0 auto;
+    }
+
+    .secondDateWrapper div:first-child p {
+        white-space: nowrap;
+        font-size: 14px;
+        font-family: YekanBakh-SemiBold, Arial, Helvetica, sans-serif;
+        font-weight: 600;
+        color: #000000;
+    }
+
+    .secondDateWrapper div:last-child span {
+        display: flex;
+        align-items: center;
+        margin: 10px;
+    }
+
+    .secondDateWrapper div:last-child {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .secondDateWrapper div:last-child p {
+        white-space: nowrap;
+        font-size: 12px;
+        font-family: Vazir-FD-WOL, Arial, Helvetica, sans-serif;
+        font-weight: 400;
+        color: #00000099;
+    }
+
+    .borderLine {
+        width: 373px;
+    }
+
+    .thirdInnerBox {
+        display: flex;
+        align-items: center;
+        margin: 12px 20px;
+        gap: 8px;
+    }
+
+    .tourIdWrapper {
+        gap: 12px;
+    }
+
+    .tourIdWrapper p:first-child {
+        white-space: nowrap;
+        font-size: 10px;
+    }
+
+    .tourIdWrapper p:last-child {
+        white-space: nowrap;
+        font-size: 12px;
+    }
+
+    .secondBorderLine {
+        width: 25px;
+        margin-bottom: 5px;
+    }
+
+    .priceWrapper {
+        gap: 13px;
+    }
+
+    .priceWrapper p:first-child {
+        white-space: nowrap;
+        font-size: 10px;
+    }
+
+    .priceWrapper p:last-child {
+        white-space: nowrap;
+        font-size: 12px;
+    }
+
+    .priceWrapper p:last-child span {
+        font-size: 8px;
+    }
+}

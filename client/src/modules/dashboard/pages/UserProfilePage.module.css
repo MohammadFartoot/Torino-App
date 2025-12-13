@@ -1,0 +1,117 @@
+.container {
+    display: flex;
+    justify-content: center;
+    margin: 40px auto;
+    gap: 30px;
+}
+
+.selectOptionContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 284px;
+    height: 170px;
+    border: 1px solid #00000033;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.box {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 16.5px 10px;
+    border-radius: 5px;
+}
+
+.box p {
+    font-family: YekanBakh-Regular, Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: #282828;
+}
+
+.border {
+    width: 258px;
+    height: 0;
+    border: 1px solid #00000033;
+    margin: 0 12px;
+}
+
+.active {
+    background-color: #28A74540;
+}
+
+.active p {
+    color: #28A745;
+}
+
+.active .img {
+    filter: brightness(0) saturate(100%) invert(41%) sepia(68%) saturate(494%) hue-rotate(77deg);
+}
+
+@media (max-width: 1200px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 15px auto 50px auto;
+    }
+
+    .selectOptionContainer {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 90px;
+        border: none;
+        width: 490px;
+        height: 50px;
+        border-bottom: 1px solid #00000040;
+        border-radius: 0;
+        margin: 0 auto 15px auto;
+    }
+
+    .box {
+        padding: 14px 10px;
+    }
+
+    .box img {
+        width: 16px;
+        height: 16px;
+    }
+
+    .box p {
+        font-weight: 700;
+        white-space: nowrap;
+    }
+
+    .border {
+        display: none;
+    }
+
+    .active {
+        background: none;
+        border-bottom: 1.5px solid #28A745;
+        border-radius: 0;
+    }
+}
+
+@media (max-width: 900px) {
+    .container {
+        margin: 15px auto;
+    }
+}
+
+@media (max-width: 768px) {
+    .selectOptionContainer {
+        margin: 0 auto;
+        gap: 30px;
+        width: 375px;
+    }
+
+    .box p {
+        font-weight: 400;
+    }
+}

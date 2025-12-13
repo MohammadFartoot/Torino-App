@@ -1,0 +1,428 @@
+.cardInfoBox {
+    width: 872px;
+    height: 171px;
+    top: 445px;
+    left: 126px;
+    border-radius: 10px;
+    border: 1px solid #00000033;
+}
+
+.expandForm {
+    width: 872px;
+    height: 195px;
+    border: 1px solid #00000033;
+    border-radius: 10px;
+}
+
+.cardInnerBox {
+    display: flex;
+    justify-content: space-between;
+    margin: 15px 10px;
+}
+
+.cardInfoTitle {
+    font-family: YekanBakh-Regular, Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: #000000;
+}
+
+.userEditBox {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.userEditBox button {
+    font-family: YekanBakh-Regular, Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: #009ECA;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.bankFormBox {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin-right: 15px;
+    margin-top: 20px;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.wrapper span {
+    font-family: YekanBakh-Regular, Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    color: #00000080;
+    position: absolute;
+    left: 10px;
+    top: 10px;
+}
+
+.errMsg {
+    font-family: YekanBakh-Light, Arial, Helvetica, sans-serif;
+    font-weight: 900;
+    font-size: 12px;
+    min-height: 15px;
+    color: #fa1e1e;
+    margin-top: 5px;
+}
+
+.errMsg.visible {
+    opacity: 1;
+}
+
+.shebaCodeInput {
+    width: 255px;
+    height: 45px;
+    border: 1px solid #00000080;
+    border-radius: 5px;
+    padding: 8px;
+    font-family: YekanBakh-Regular, Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: #282828;
+}
+
+.shebaCodeInput:focus {
+    outline: none;
+}
+
+.shebaCodeInput::placeholder {
+    font-family: YekanBakh-Regular, Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: #00000080;
+}
+
+.cardNumberInput {
+    width: 255px;
+    height: 45px;
+    border: 1px solid #00000080;
+    border-radius: 5px;
+    padding: 8px;
+    font-family: YekanBakh-Regular, Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: #282828;
+}
+
+.cardNumberInput:focus {
+    outline: none;
+}
+
+.cardNumberInput::placeholder {
+    font-family: YekanBakh-Regular, Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: #00000080;
+}
+
+.accountNumberInput {
+    width: 255px;
+    height: 45px;
+    border: 1px solid #00000080;
+    border-radius: 5px;
+    padding: 8px;
+    font-family: YekanBakh-Regular, Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: #282828;
+}
+
+.accountNumberInput:focus {
+    outline: none;
+}
+
+.accountNumberInput::placeholder {
+    font-family: YekanBakh-Regular, Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: #00000080;
+}
+
+.border {
+    width: 870px;
+    border: 0.5px solid #00000033;
+    margin-top: 5px;
+}
+
+.btnBox {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 10px;
+    margin-left: 30px;
+    padding: 9px 0;
+}
+
+.btnBox button:first-child {
+    font-family: YekanBakh-SemiBold, Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    width: 144px;
+    height: 41px;
+    color: #FFFFFF;
+    background-color: #28A745;
+    border: none;
+    border-radius: 5px;
+    padding: 8px;
+    cursor: pointer;
+}
+
+.btnBox button:last-child {
+    font-family: YekanBakh-SemiBold, Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    width: 144px;
+    height: 41px;
+    color: #28A745;
+    background-color: #FFFFFF;
+    border: 2px solid #28A745;
+    border-radius: 5px;
+    padding: 8px;
+    cursor: pointer;
+}
+
+.secondCardInnerBox {
+    display: flex;
+    align-items: center;
+    margin: 25px 10px;
+}
+
+.shebaNumber {
+    display: flex;
+    align-items: center;
+    gap: 70px;
+}
+
+.shebaNumber p:first-child {
+    font-family: YekanBakh-Light, Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    color: #000000;
+}
+
+.shebaNumber p:last-child {
+    font-family: Vazir-FD-WOL, Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: #282828;
+    margin-left: 15px;
+}
+
+.shebaNumber span {
+    width: 13px;
+    height: 0;
+    border: 0.5px solid #282828;
+    margin-right: 69px;
+    margin-left: 117px;
+}
+
+.cardNumber {
+    display: flex;
+    align-items: center;
+    margin-right: 167px;
+    gap: 30px;
+}
+
+.cardNumber p:first-child {
+    font-family: YekanBakh-Light, Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    color: #000000;
+}
+
+.cardNumber p:last-child {
+    font-family: Vazir-FD-WOL, Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: #282828;
+}
+
+.cardNumber span {
+    width: 13px;
+    height: 0;
+    border: 0.5px solid #282828;
+    margin-right: 52px;
+}
+
+.thirdCardInnerBox {
+    display: flex;
+    align-items: center;
+    margin: 15px 10px;
+}
+
+.bankAccountNumber {
+    display: flex;
+    align-items: center;
+    gap: 70px;
+}
+
+.bankAccountNumber p:first-child {
+    font-family: YekanBakh-Light, Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    color: #000000;
+}
+
+.bankAccountNumber p:last-child {
+    font-family: Vazir-FD-WOL, Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: #282828;
+}
+
+.bankAccountNumber span {
+    width: 13px;
+    height: 0;
+    border: 0.5px solid #282828;
+    margin-right: 53px;
+}
+
+.error {
+    border: 1px solid #fa1e1e;
+}
+
+.error::placeholder {
+    color: #fa1e1e;
+    opacity: 1;
+}
+
+@media (max-width: 900px) {
+    .cardInfoBox {
+        margin: 0 auto 30px auto;
+    }
+}
+
+@media (max-width: 768px) {
+    .cardInfoBox {
+        width: 375px;
+        height: 205px;
+    }
+    .expandForm {
+        width: 375px;
+        height: 294px;
+    }
+    .cardInnerBox {
+        margin: 15px;
+    }
+    .userEditBox {
+        gap: 5px;
+    }
+    .userEditBox img {
+        width: 12px;
+        height: 12px;
+    }
+    .userEditBox button {
+        font-size: 13px;
+    }
+    .secondCardInnerBox {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-top: 40px;
+        margin-right: 15px;
+    }
+    .shebaNumber {
+        order: 2;
+        gap: 85px;
+        margin-top: 20px;
+    }
+    .shebaNumber p:last-child {
+        margin-left: 0;
+    }
+    .shebaNumber span {
+        margin-right: 106px;
+        margin-left: 0;
+    }
+    .shebaCodeWrapper {
+        order: 2;
+    }
+    .shebaCodeInput {
+        width: 320px;
+        height: 40px;
+    }
+    .shebaCodeInput::placeholder {
+        font-size: 13px;
+    }
+    .cardNumber {
+        order: 1;
+        margin-right: 0;
+        gap: 110px;
+    }
+    .cardNumber span {
+        margin-right: 74px;
+    }
+    .cardNumberWrapper {
+        order: 1;
+    }
+    .cardNumberInput {
+        width: 320px;
+        height: 40px;
+    }
+    .cardNumberInput::placeholder {
+        font-size: 13px;
+    }
+    .thirdCardInnerBox {
+        margin: -5px 15px;
+    }
+    .bankAccountNumber {
+        gap: 104px;
+    }
+    .bankAccountNumber span {
+        margin-right: 71px;
+    }
+    .accountNumberWrapper {
+        order: 3;
+    }
+    .accountNumberInput {
+        width: 320px;
+        height: 40px;
+    }
+    .accountNumberInput::placeholder {
+        font-size: 13px;
+    }
+    .bankFormBox {
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+        margin: 0 auto;
+    }
+    .wrapper span {
+        font-size: 14px;
+        top: 11px;
+    }
+    .errMsg {
+        font-size: 10px;
+    }
+    .border {
+        display: none;
+    }
+    .btnBox {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: -7px auto;
+        gap: 40px;
+    }
+    .btnBox button:first-child {
+        width: 138px;
+        height: 41px;
+    }
+    .btnBox button:last-child {
+        width: 138px;
+        height: 41px;
+    }
+}

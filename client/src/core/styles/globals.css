@@ -1,0 +1,138 @@
+@font-face {
+    font-family: "Vazir-Light-FD-WOL";
+    src: url("/fonts/Vazir-Light-FD-WOL.woff2") format("woff2");
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Vazir-FD-WOL";
+    src: url("/fonts/Vazir-FD-WOL.woff2") format("woff2");
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Vazir-Medium-FD-WOL";
+    src: url("/fonts/Vazir-Medium-FD-WOL.woff2") format("woff2");
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "YekanBakh-Light";
+    src: url("/fonts/YekanBakh-Light.woff2") format("woff2");
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "YekanBakh-Regular";
+    src: url("/fonts/YekanBakh-Regular.woff2") format("woff2");
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "YekanBakh-SemiBold";
+    src: url("/fonts/YekanBakh-SemiBold.woff2") format("woff2");
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "YekanBakh-Bold";
+    src: url("/fonts/YekanBakh-Bold.woff2") format("woff2");
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Vazirmatn-Black";
+    src: url("/fonts/Vazirmatn-Black.woff2") format("woff2");
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Vazirmatn-Medium";
+    src: url("/fonts/Vazirmatn-Medium.woff2") format("woff2");
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Vazirmatn-Bold";
+    src: url("/fonts/Vazirmatn-Bold.woff2") format("woff2");
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "IranianSans";
+    src: url("/fonts/IranianSans.woff2") format("woff2");
+    font-style: normal;
+    font-display: swap;
+}
+
+:root {
+    --background: #ffffff;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html, body {
+    max-width: 1800px;
+    height: 100%;
+    scroll-behavior: smooth;
+}
+
+.layout {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.main-white {
+    flex: 1;
+    background-color: #ffffff;
+}
+
+.main-gray {
+    flex: 1;
+    background-color: #f4f4f4;
+}
+
+.custom-date-input {
+    font-family: YekanBakh-Regular, Arial, Helvetica, sans-serif;
+    font-weight: 800;
+    font-size: 17px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    color: #0aa22d;
+    margin: 0 -8px;
+}
+
+@media (max-width: 900px) {
+    .main-white, .main-gray {
+        background-color: #FFFFFF;
+    }
+}
+
+@media (max-width: 768px) {
+    .main-white, .main-gray {
+        background-color: #FFFFFF;
+    }
+}
+
+@media (max-width: 480px) {
+    .main-white, .main-gray {
+        background-color: #FFFFFF;
+    }
+}
+

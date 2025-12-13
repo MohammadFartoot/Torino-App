@@ -1,0 +1,534 @@
+.userInfoBox {
+    display: flex;
+    flex-direction: column;
+    width: 872px;
+    height: 171px;
+    border-radius: 10px;
+    border: 1px solid #00000033;
+    gap: 10px;
+}
+
+.expandForm {
+    width: 872px;
+    height: 240px;
+    border: 1px solid #00000033;
+    border-radius: 10px;
+}
+
+.innerBox {
+    display: flex;
+    justify-content: space-between;
+    margin: 15px 10px;
+}
+
+.userInfoTitle {
+    font-family: YekanBakh-Light, Arial, Helvetica, sans-serif;
+    font-weight: 900;
+    font-size: 16px;
+    color: #000000;
+}
+
+.userEditBox {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.userEditBox button {
+    font-family: YekanBakh-Regular, Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: #009ECA;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.userFormBox {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 25px;
+    margin-right: 15px;
+    margin-top: -10px;
+}
+
+.fullNameInput {
+    width: 255px;
+    height: 45px;
+    border: 1px solid #00000080;
+    border-radius: 5px;
+    padding: 8px;
+    font-family: YekanBakh-Regular, Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: #282828;
+}
+
+.fullNameInput:focus {
+    outline: none;
+}
+
+.fullNameInput::placeholder {
+    font-family: YekanBakh-Regular, Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: #00000080;
+}
+
+.nationalCodeInput {
+    width: 255px;
+    height: 45px;
+    border: 1px solid #00000080;
+    border-radius: 5px;
+    padding: 8px;
+    font-family: YekanBakh-Regular, Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: #282828;
+}
+
+.nationalCodeInput:focus {
+    outline: none;
+}
+
+.nationalCodeInput::placeholder {
+    font-family: YekanBakh-Regular, Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: #00000080;
+}
+
+.birthDateWrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.calendarImg {
+    display: flex;
+    position: absolute;
+    right: 10px;
+}
+
+.birthDateInput:focus {
+    outline: none;
+}
+
+.birthDateInput::placeholder {
+    font-family: YekanBakh-Regular, Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: #00000080;
+}
+
+.birthDateInput {
+    width: 255px;
+    height: 45px;
+    border: 1px solid #00000080;
+    border-radius: 5px;
+    padding: 8px 30px 8px 8px;
+        gap: 8px;
+        font-family: YekanBakh-Regular, Arial, Helvetica, sans-serif;
+        font-weight: 400;
+        font-size: 14px;
+        color: #282828;
+}
+
+.genderInputWrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.genderInputWrapper label {
+    position: absolute;
+    bottom: 35px;
+    right: 7px;
+    padding: 0 8px;
+    font-family: YekanBakh-Regular, Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    color: #00000080;
+    background-color: #FFFFFF;
+}
+
+.genderInput {
+    width: 255px;
+    height: 45px;
+    border: 1px solid #00000080;
+    border-radius: 5px;
+    padding: 8px;
+    margin-top: -10px;
+    font-family: YekanBakh-Regular, Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: #282828;
+    cursor: pointer;
+}
+
+.genderInput:focus {
+    outline: none;
+}
+
+.arrowImg {
+    display: flex;
+    position: absolute;
+    left: 10px;
+    bottom: 15px;
+}
+
+.suggestedGendersList {
+    width: 150px;
+    font-family: Vazir-Medium-FD-WOL, Arial, Helvetica, sans-serif;
+    font-weight: 100;
+    font-size: 16px;
+    position: absolute;
+    margin: 260px auto 0 auto;
+    color: dimgrey;
+    background-color: #FFFFFF;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.suggestedBox {
+    padding: 9px;
+    border-bottom: 1px solid #0000001F;
+}
+
+.suggestedBox:hover {
+    background-color: #28A74540;
+}
+
+.border {
+    width: 870px;
+    border: 0.5px solid #00000033;
+    margin-top: 20px;
+}
+
+.btnBox {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 10px;
+    margin-left: 30px;
+    margin-top: 8px;
+}
+
+.btnBox button:first-child {
+    font-family: YekanBakh-SemiBold, Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    width: 144px;
+    height: 41px;
+    color: #FFFFFF;
+    background-color: #28A745;
+    border: none;
+    border-radius: 5px;
+    padding: 8px;
+    cursor: pointer;
+}
+
+.btnBox button:last-child {
+    font-family: YekanBakh-SemiBold, Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    width: 144px;
+    height: 41px;
+    color: #28A745;
+    background-color: #FFFFFF;
+    border: 2px solid #28A745;
+    border-radius: 5px;
+    padding: 8px;
+    cursor: pointer;
+}
+
+.secondInnerBox {
+    display: flex;
+    align-items: center;
+    margin: 0 10px;
+}
+
+.fullName {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.fullName p:first-child {
+    font-family: YekanBakh-Light, Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    color: #000000;
+}
+
+.fullName p:last-child {
+    font-family: YekanBakh-SemiBold, Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    color: #282828;
+}
+
+.fullName span {
+    width: 13px;
+    height: 0;
+    border: 0.5px solid #282828;
+    margin-right: 60px;
+}
+
+.nationalCode {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    margin-right: 280px;
+}
+
+.nationalCode p:first-child {
+    font-family: YekanBakh-Light, Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    color: #000000;
+}
+
+.nationalCode p:last-child {
+    font-family: Vazir-FD-WOL, Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: #282828;
+}
+
+.nationalCode span {
+    width: 13px;
+    height: 0;
+    border: 0.5px solid #282828;
+    margin-right: 60px;
+}
+
+.thirdInnerBox {
+    display: flex;
+    align-items: center;
+    margin: 20px 10px;
+}
+
+.gender {
+    display: flex;
+    align-items: center;
+    gap: 100px;
+}
+
+.gender p:first-child {
+    font-family: YekanBakh-Light, Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    color: #000000;
+}
+
+.gender p:last-child {
+    font-family: YekanBakh-SemiBold, Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    color: #282828;
+}
+
+.gender span {
+    width: 13px;
+    height: 0;
+    border: 0.5px solid #282828;
+    margin-right: 57px;
+}
+
+.noBirthDate {
+    display: flex;
+    align-items: center;
+    gap: 92px;
+    margin-right: 280px;
+}
+
+.noBirthDate p:first-child {
+    font-family: YekanBakh-Light, Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    color: #000000;
+}
+
+.noBirthDate p:last-child {
+    font-family: Vazir-FD-WOL, Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: #282828;
+}
+
+.noBirthDate span {
+    width: 13px;
+    height: 0;
+    border: 0.5px solid #282828;
+}
+
+.birthDate {
+    display: flex;
+    align-items: center;
+    gap: 31px;
+    margin-right: 336px;
+}
+
+.birthDate p:first-child {
+    font-family: YekanBakh-Light, Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    color: #000000;
+}
+
+.birthDate p:last-child {
+    font-family: Vazir-FD-WOL, Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: #282828;
+}
+
+.error {
+    border: 1px solid #fa1e1e;
+}
+
+.error::placeholder {
+    color: #fa1e1e;
+    opacity: 1;
+}
+
+@media (max-width: 768px) {
+    .userInfoBox {
+        margin: 0 auto;
+        width: 375px;
+        height: 251px;
+    }
+    .expandForm {
+        width: 375px;
+        height: 355px;
+    }
+    .userEditBox {
+        gap: 5px;
+    }
+    .userEditBox img {
+        width: 12px;
+        height: 12px;
+    }
+    .userEditBox button {
+        font-size: 13px;
+    }
+    .innerBox {
+        margin: 15px;
+    }
+    .border {
+        display: none;
+    }
+    .btnBox {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 40px;
+        margin: 17px auto;
+    }
+    .btnBox button:first-child {
+        width: 138px;
+        height: 41px;
+    }
+    .btnBox button:last-child {
+        width: 138px;
+        height: 41px;
+    }
+    .secondInnerBox {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin: 15px;
+    }
+    .fullName {
+        gap: 135px;
+    }
+    .fullName span {
+        margin-right: 0px;
+    }
+    .nationalCode {
+        margin-right: 2px;
+        margin-top: 20px;
+        gap: 208px;
+    }
+    .nationalCode span {
+        margin-right: -2px;
+    }
+    .thirdInnerBox {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-top: 20px;
+        margin-right: 16px;
+    }
+    .gender {
+        gap: 206px;
+    }
+    .gender span {
+        margin-right: -4px;
+    }
+    .birthDate {
+        display: flex;
+        align-items: center;
+        gap: 193px;
+        margin-top: 20px;
+        margin-right: 0;
+    }
+    .noBirthDate {
+        margin-top: 20px;
+        margin-right: 0;
+    }
+    .noBirthDate span {
+        margin-right: 98px;
+    }
+    .userFormBox {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: -5px auto 0 auto;
+        gap: 20px;
+    }
+    .fullNameInput {
+        width: 320px;
+        height: 40px;
+    }
+    .fullNameInput::placeholder {
+        font-size: 13px;
+    }
+    .nationalCodeInput {
+        width: 320px;
+        height: 40px;
+    }
+    .nationalCodeInput::placeholder {
+        font-size: 13px;
+    }
+    .birthDateWrapper {
+        order: 2;
+    }
+    .birthDateInput {
+        width: 320px;
+        height: 40px;
+    }
+    .birthDateInput::placeholder {
+        font-size: 13px;
+    }
+    .genderInputWrapper {
+        order: 1;
+    }
+    .genderInput {
+        width: 320px;
+        height: 40px;
+        margin-top: 0px;
+    }
+    .suggestedGendersList {
+        position: absolute;
+        margin: 178px auto 0 170px;
+        font-size: 14px;
+        z-index: 1;
+    }
+}

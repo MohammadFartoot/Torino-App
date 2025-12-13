@@ -1,0 +1,204 @@
+.formContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.accountBox {
+    display: flex;
+    flex-direction: column;
+    width: 872px;
+    height: 115px;
+    border: 1px solid #00000033;
+    border-radius: 10px;
+    gap: 10px;
+}
+
+.accountTitle {
+    font-family: YekanBakh-Regular, Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: #000000;
+    margin: 10px;
+}
+
+.userMobileBox {
+    display: flex;
+    align-items: center;
+}
+
+.userMobile {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    margin: 0 35px;
+}
+
+.userMobile p:first-child {
+    font-family: YekanBakh-Light, Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    color: #000000;
+    white-space: nowrap;
+}
+
+.userMobile p:last-child {
+    font-family: Vazir-FD-WOL, Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: #282828;
+}
+
+.userEmailBox {
+    display: flex;
+    align-items: center;
+    margin-right: 230px;
+}
+
+.emailInputBox {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-right: -50px;
+}
+
+.emailInputBox input {
+    width: 255px;
+    height: 45px;
+    border: 1px solid #00000080;
+    border-radius: 5px;
+    padding: 8px;
+    outline: none;
+}
+
+.emailInputBox input.error {
+    border: 1px solid #fa1e1e;
+}
+
+.emailInputBox input::placeholder {
+    font-family: YekanBakh-Regular, Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: #00000080;
+}
+
+.emailInputBox button {
+    font-family: YekanBakh-SemiBold, Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    width: 122px;
+    height: 45px;
+    border-radius: 5px;
+    padding: 8px;
+    background-color: #28A745;
+    color: #FFFFFF;
+    border: none;
+    cursor: pointer;
+}
+
+.userEmail {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.userEmail p {
+    font-family: YekanBakh-Light, Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    color: #000000;
+}
+
+.userEmail span {
+    width: 13px;
+    height: 0;
+    border: 0.5px solid #282828;
+}
+
+.editBox {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-right: 30px;
+    cursor: pointer;
+}
+
+.editBox button {
+    font-family: YekanBakh-Regular, Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: #009ECA;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.hasEmail {
+    margin-right: 1px;
+}
+
+.noEmail {
+    gap: 90px;
+}
+
+.noEmail span {
+    margin-left: 90px;
+}
+
+@media (max-width: 900px) {
+    .formContainer {
+        gap: 30px;
+    }
+}
+
+@media (max-width: 768px) {
+    .formContainer {
+        gap: 20px;
+    }
+    .accountBox {
+        margin: 0 auto;
+        width: 375px;
+        height: 179px;
+    }
+    .userMobileBox {
+        display: flex;
+        flex-direction: column;
+    }
+    .accountTitle {
+        margin: 15px;
+    }
+    .userMobile {
+        margin: 0 17px;
+        gap: 170px;
+    }
+    .userEmailBox {
+        display: flex;
+        align-items: center;
+        margin-top: 40px;
+        margin-right: -5px;
+    }
+    .noEmail {
+        gap: 60px;
+    }
+    .noEmail span {
+        margin-left: 128px;
+    }
+    .hasEmail {
+        margin-left: 65px;
+    }
+    .emailInputBox {
+        margin: 0 auto;
+        gap: 40px;
+    }
+    .emailInputBox input {
+        width: 200px;
+        height: 40px;
+    }
+    .emailInputBox input::placeholder {
+        font-size: 12px;
+    }
+    .emailInputBox button {
+        width: 93px;
+        height: 40px;
+    }
+}
