@@ -1,0 +1,129 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 872px;
+    height: 245px;
+    border: 1px solid #00000033;
+    border-radius: 10px;
+}
+
+.header {
+    display: flex;
+    width: 870px;
+    height: 55px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background-color: #F3F3F3;
+}
+
+.titleWrapper {
+    display: flex;
+    align-items: center;
+    gap: 130px;
+    margin: 0 20px;
+}
+
+.titleWrapper p {
+    font-family: YekanBakh-Regular, Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: #000000;
+}
+
+.dataWrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 50px;
+    font-variant-numeric: tabular-nums;
+}
+
+.data {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 2px;
+    gap: 105px;
+    font-variant-numeric: tabular-nums;
+}
+
+.data p {
+    font-family: Vazir-Light-FD-WOL, Arial, Helvetica, sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    color: #000000;
+}
+
+.data p:nth-child(4) {
+    margin-left: 20px;
+}
+
+.data p:nth-child(4) span {
+    margin: 0 5px;
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 375px;
+        height: 211px;
+        margin-bottom: 90px;
+    }
+    .header {
+        width: 373px;
+        height: 41px;
+        background-color: #DBDBDB;
+    }
+    .titleWrapper {
+        gap: 70px;
+    }
+    .titleWrapper p {
+        font-family: YekanBakh-Light, Arial, Helvetica, sans-serif;
+        font-weight: 900;
+        color: #282828CC;
+        font-size: 12px;
+        white-space: nowrap;
+    }
+    .titleWrapper p:nth-child(2) {
+        font-size: 10px;
+    }
+    .titleWrapper p:nth-child(3) {
+        display: none;
+    }
+    .dataWrapper {
+        margin-left: -10px;
+    }
+    .data {
+        display: flex;
+        align-items: center;
+        margin-top: 15px;
+        margin-right: 0;
+        margin-bottom: 5px;
+        gap: 40px;
+    }
+    .data p:nth-child(1) {
+        color: #282828;
+        font-size: 10px;
+        white-space: nowrap;
+        font-variant-numeric: tabular-nums;
+    }
+    .data p:nth-child(2) {
+        color: #282828;
+        font-size: 13px;
+        margin-right: 15px;
+        margin-left: 15px;
+        font-variant-numeric: tabular-nums;
+    }
+    .data p:nth-child(3) {
+        display: none;
+    }
+    .data p:nth-child(4) {
+        color: #282828;
+        font-size: 13px;
+        white-space: nowrap;
+        margin-right: 10px;
+        font-variant-numeric: tabular-nums;
+    }
+    .data p:nth-child(4) span {
+        display: none;
+    }
+}

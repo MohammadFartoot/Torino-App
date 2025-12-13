@@ -1,0 +1,517 @@
+.container {
+    width: 1188px;
+    height: 427px;
+    margin: 40px auto;
+    background-color: #FFFFFF;
+    border: 1px solid #00000040;
+    border-radius: 10px;
+}
+
+.mobileContainer {
+    display: none;
+}
+
+.tourContainer {
+    display: flex;
+    margin: 30px 20px;
+    gap: 30px;
+}
+
+.img {
+    border-radius: 12px;
+}
+
+.title {
+    font-family: YekanBakh-Bold, Arial, Helvetica, sans-serif;
+    font-weight: 300;
+    font-size: 32px;
+    color: #000000;
+}
+
+.options {
+    font-family: Vazir-Light-FD-WOL, Arial, Helvetica, sans-serif;
+    font-weight: 900;
+    font-size: 20px;
+    color: #282828;
+    margin: 15px 0;
+}
+
+.description {
+    display: flex;
+    gap: 40px;
+    margin: 30px 10px;
+}
+
+.userBox {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.userBox p {
+    font-family: YekanBakh-Light, Arial, Helvetica, sans-serif;
+    font-weight: 900;
+    font-size: 20px;
+    color: #7D7D7D;
+}
+
+.planBox {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.planBox p {
+    font-family: YekanBakh-Light, Arial, Helvetica, sans-serif;
+    font-weight: 900;
+    font-size: 20px;
+    color: #7D7D7D;
+}
+
+.medalBox {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.medalBox p {
+    font-family: YekanBakh-Light, Arial, Helvetica, sans-serif;
+    font-weight: 900;
+    font-size: 20px;
+    color: #7D7D7D;
+}
+
+.reserveBox {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 10px;
+}
+
+.reserveBox p {
+    font-family: Vazir-Medium-FD-WOL, Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 28px;
+    color: #009ECA;
+}
+
+.reserveBox span {
+    font-family: Vazir-FD-WOL, Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: #282828CC;
+    margin: 0 5px;
+}
+
+.detailsContainer {
+    display: flex;
+    margin: 10px 25px;
+}
+
+.originBox {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.originBox p {
+    font-family: Vazir-FD-WOL, Arial, Helvetica, sans-serif;
+    font-weight: 900;
+    font-size: 16px;
+    color: #000000;
+}
+
+.origin {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.origin p {
+    font-family: Vazir-Light-FD-WOL, Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    color: #444444;
+}
+
+.border {
+    width: 84px;
+    height: 1px;
+    border: 1px solid #00000030;
+    rotate: -90deg;
+    margin: 38px 10px;
+}
+
+.startDateBox {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.startDateBox p {
+    font-family: Vazir-FD-WOL, Arial, Helvetica, sans-serif;
+    font-weight: 900;
+    font-size: 16px;
+    color: #000000;
+}
+
+.startDate {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.startDate p {
+    font-family: Vazir-Light-FD-WOL, Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    color: #444444;
+}
+
+.endDateBox {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.endDateBox p {
+    font-family: Vazir-FD-WOL, Arial, Helvetica, sans-serif;
+    font-weight: 900;
+    font-size: 16px;
+    color: #000000;
+}
+
+.endDate {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.endDate p {
+    font-family: Vazir-Light-FD-WOL, Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    color: #444444;
+}
+
+.vehicleBox {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.vehicleBox p {
+    font-family: Vazir-FD-WOL, Arial, Helvetica, sans-serif;
+    font-weight: 900;
+    font-size: 16px;
+    color: #000000;
+}
+
+.vehicle {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.vehicle p {
+    font-family: Vazir-Light-FD-WOL, Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    color: #444444;
+}
+
+.capacityBox {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.capacityBox p {
+    font-family: Vazir-FD-WOL, Arial, Helvetica, sans-serif;
+    font-weight: 900;
+    font-size: 16px;
+    color: #000000;
+}
+
+.capacity {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.capacity p {
+    font-family: Vazir-Light-FD-WOL, Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    color: #444444;
+}
+
+.capacityBorder {
+    width: 84px;
+    height: 1px;
+    border: 1px solid #00000030;
+    rotate: -90deg;
+    margin: 38px 0;
+}
+
+.insuranceBox {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.insuranceBox p {
+    font-family: Vazir-FD-WOL, Arial, Helvetica, sans-serif;
+    font-weight: 900;
+    font-size: 16px;
+    color: #000000;
+}
+
+.insurance {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.insurance p {
+    font-family: Vazir-Light-FD-WOL, Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    color: #444444;
+}
+
+@media (max-width: 1200px) {
+    .container {
+        width: 100%;
+        border: none;
+    }
+    .tourContainer {
+        margin: 30px 50px;
+    }
+    .img {
+        margin-top: 30px;
+    }
+    .title {
+        margin-top: 30px;
+    }
+    .detailsContainer {
+        margin: 10px 60px;
+    }
+}
+
+@media (max-width: 1050px) {
+    .tourContainer {
+        margin: 30px 10px;
+    }
+    .detailsContainer {
+        margin: 10px 100px;
+    }
+    .startDateBox p {
+        white-space: nowrap;
+    }
+    .endDateBox p {
+        white-space: nowrap;
+    }
+    .vehicleBox p {
+        white-space: nowrap;
+    }
+    .capacityBox p {
+        white-space: nowrap;
+    }
+    .border {
+        margin: 38px 0;
+    }
+    .reserveBox {
+        margin: 0 30px;
+    }
+}
+
+@media (max-width: 900px) {
+    .container {
+        display: none;
+    }
+    .mobileContainer {
+        display: flex;
+        flex-direction: column;
+    }
+    .tourContainer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+    .img {
+        width: 490px;
+        height: 250px;
+    }
+    .mobileTourTitle {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 140px;
+    }
+    .title {
+        font-size: 27px;
+    }
+    .options {
+        font-size: 17px;
+    }
+    .description {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 20px 0;
+        gap: 30px;
+    }
+    .userBox img {
+        width: 18px;
+        height: 18px;
+    }
+    .userBox p {
+        font-size: 16px;
+    }
+    .planBox img {
+        width: 18px;
+        height: 18px;
+    }
+    .planBox p {
+        font-size: 16px;
+    }
+    .medalBox img {
+        width: 18px;
+        height: 18px;
+    }
+    .medalBox p {
+        font-size: 16px;
+    }
+    .detailsBox {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 75px;
+        margin: 45px auto 30px auto;
+    }
+    .vehicleBox p {
+        font-size: 16px;
+        text-align: center;
+    }
+    .vehicle img {
+        width: 20px;
+        height: 20px;
+    }
+    .vehicle p {
+        font-size: 16px;
+    }
+    .capacityBox p {
+        font-size: 16px;
+        text-align: center;
+    }
+    .capacity img {
+        width: 20px;
+        height: 20px;
+    }
+    .capacity p {
+        font-size: 16px;
+    }
+    .insuranceBox p {
+        font-size: 16px;
+        text-align: center;
+    }
+    .insurance img {
+        width: 20px;
+        height: 20px;
+    }
+    .insurance p {
+        font-size: 16px;
+    }
+    .reserveBox {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 10px;
+        gap: 90px;
+        margin-bottom: 30px;
+    }
+    .reserveBox p {
+        font-size: 26px;
+        font-weight: 100;
+    }
+    .reserveBox span {
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 768px) {
+    .img {
+        width: 400px;
+        height: 240px;
+    }
+    .mobileTourTitle {
+        gap: 120px;
+    }
+    .title {
+        font-size: 24px;
+    }
+    .options {
+        font-size: 15px;
+    }
+    .userBox img {
+        width: 14px;
+        height: 14px;
+    }
+    .userBox p {
+        font-size: 13px;
+    }
+    .planBox img {
+        width: 14px;
+        height: 14px;
+    }
+    .planBox p {
+        font-size: 13px;
+    }
+    .medalBox img {
+        width: 14px;
+        height: 14px;
+    }
+    .medalBox p {
+        font-size: 13px;
+    }
+    .detailsBox {
+        gap: 55px;
+    }
+    .vehicleBox p {
+        font-size: 14px;
+    }
+    .vehicle img {
+        width: 16px;
+        height: 16px;
+    }
+    .capacityBox p {
+        font-size: 14px;
+    }
+    .capacity img {
+        width: 16px;
+        height: 16px;
+    }
+    .insuranceBox p {
+        font-size: 14px;
+    }
+    .insurance img {
+        width: 16px;
+        height: 16px;
+    }
+    .reserveBox {
+        gap: 50px;
+        padding-top: 0;
+    }
+    .reserveBox p {
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 480px) {
+    .img {
+        width: 330px;
+        height: 220px;
+    }
+}

@@ -1,0 +1,281 @@
+.logInBtn {
+    width: fit-content;
+    height: 44px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #28A745;
+    padding: 8px;
+    border-radius: 8px;
+    gap: 4px;
+    cursor: pointer;
+}
+
+.signIn {
+    display: none;
+}
+
+.logInBtn p {
+    font-family: Vazir-FD-WOL, Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    color: #28A745;
+}
+
+.profileBox {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    position: relative;
+    cursor: pointer;
+}
+
+.user {
+    display: flex;
+    align-items: center;
+}
+
+.profileBox p {
+    display: flex;
+    align-items: center;
+    font-family: Vazir-Medium-FD-WOL, Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    color: #28A745;
+}
+
+.arrowDown {
+    display: flex;
+    align-items: center;
+}
+
+.dropDownBox {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 246px;
+    height: 152px;
+    border-radius: 11px;
+    background-color: #FFFFFF;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    position: absolute;
+    top: 95%;
+    left: 16%;
+    /*top: 73px;*/
+    /*left: 290px;*/
+    animation: dropDownMenu 0.8s cubic-bezier(0.22, 0.61, 0.36, 1) forwards;
+}
+
+.smallProfileBox {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 246px;
+    height: 44px;
+    border-top-left-radius: 11px;
+    border-top-right-radius: 11px;
+    background-color: #F4F4F4;
+}
+
+.smallProfile {
+    background-color: #D9D9D9;
+    border-radius: 50%;
+    padding: 5px;
+    margin-right: 10px;
+}
+
+.smallProfileBox p {
+    display: flex;
+    align-items: center;
+    font-family: Vazir-Medium-FD-WOL, Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: #10411B;
+}
+
+.accountInfoBox {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.accountInfo {
+    margin-right: 10px;
+}
+
+.toAccount {
+    font-family: YekanBakh-Regular, Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: #282828;
+    text-decoration: none;
+}
+
+.border {
+    width: 222px;
+    height: 0;
+    border: 0.5px solid #0000001F;
+    margin-right: 11px;
+}
+
+.logOutBox {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logOut {
+    margin-right: 10px;
+}
+
+.logOutBox p {
+    font-family: YekanBakh-Regular, Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: #D40000;
+}
+
+@media (max-width: 1440px) {
+    .dropDownBox {
+        position: absolute;
+        top: 95%;
+        left: 8%;
+    }
+}
+
+@media (max-width: 1200px) {
+    .logInBtn {
+        flex-shrink: 0;
+        white-space: nowrap;
+    }
+    .dropDownBox {
+        position: absolute;
+        top: 95%;
+        left: 1%;
+    }
+}
+
+@media (max-width: 900px) {
+    .logInBtn {
+        height: 40px;
+    }
+    .logInBtn p {
+        font-size: 17px;
+    }
+    .dropDownBox {
+        position: absolute;
+        top: 68px;
+        left: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .logInBtn {
+        display: none;
+    }
+    .signIn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+    }
+    .profileBox p {
+        font-size: 16px;
+    }
+    .user {
+        width: 20px;
+        height: 20px;
+    }
+    .arrowDown {
+        width: 22px;
+        height: 22px;
+    }
+    .dropDownBox {
+        width: 200px;
+        height: 114px;
+        gap: 8px;
+        position: absolute;
+        top: 90%;
+        left: 3%;
+    }
+    .smallProfileBox {
+        width: 200px;
+        height: 44px;
+    }
+    .smallProfile {
+        width: 24px;
+        height: 24px;
+    }
+    .smallProfileBox p {
+        font-size: 14px;
+    }
+    .accountInfo {
+        width: 16px;
+        height: 16px;
+    }
+    .logOutBox p {
+        font-size: 12px;
+    }
+    .logOut {
+        width: 16px;
+        height: 16px;
+    }
+    .toAccount {
+        font-size: 12px;
+    }
+    .border {
+        width: 200px;
+        margin-right: 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .logInBtn {
+        display: none;
+    }
+    .signIn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+    }
+    .profileBox p {
+        font-size: 14px;
+    }
+    .user {
+        width: 14px;
+        height: 14px;
+    }
+    .arrowDown {
+        width: 16px;
+        height: 16px;
+    }
+    .dropDownBox {
+        width: 157px;
+        height: 114px;
+        gap: 8px;
+        position: absolute;
+        top: 63px;
+        left: 17px;
+    }
+    .smallProfileBox {
+        width: 157px;
+        height: 44px;
+    }
+    .border {
+        width: 157px;
+        margin-right: 0;
+    }
+}
+
+@keyframes dropDownMenu {
+    from {
+        transform: translateY(-20%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
