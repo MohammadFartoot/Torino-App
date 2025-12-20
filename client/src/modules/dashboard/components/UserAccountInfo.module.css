@@ -14,12 +14,21 @@
     gap: 10px;
 }
 
+html[data-theme="dark"] .accountBox {
+    border: none;
+    border-bottom: 2px solid #23913c;
+}
+
 .accountTitle {
     font-family: YekanBakh-Regular, Arial, Helvetica, sans-serif;
     font-weight: 400;
     font-size: 16px;
     color: #000000;
     margin: 10px;
+}
+
+html[data-theme="dark"] .accountTitle {
+    color: #e6e6e6;
 }
 
 .userMobileBox {
@@ -42,11 +51,19 @@
     white-space: nowrap;
 }
 
+html[data-theme="dark"] .userMobile p:first-child {
+    color: #e6e6e6;
+}
+
 .userMobile p:last-child {
     font-family: Vazir-FD-WOL, Arial, Helvetica, sans-serif;
     font-weight: 400;
     font-size: 14px;
     color: #282828;
+}
+
+html[data-theme="dark"] .userMobile p:last-child {
+    color: #a1a1a1;
 }
 
 .userEmailBox {
@@ -71,8 +88,16 @@
     outline: none;
 }
 
+html[data-theme="dark"] .emailInputBox input {
+    background-color: #e6e6e6;
+}
+
 .emailInputBox input.error {
     border: 1px solid #fa1e1e;
+}
+
+html[data-theme="dark"] .emailInputBox input.error {
+    border: 1.6px solid #fa1e1e;
 }
 
 .emailInputBox input::placeholder {
@@ -109,10 +134,18 @@
     color: #000000;
 }
 
+html[data-theme="dark"] .userEmail p {
+    color: #e6e6e6;
+}
+
 .userEmail span {
     width: 13px;
     height: 0;
     border: 0.5px solid #282828;
+}
+
+html[data-theme="dark"] .userEmail span {
+    border: 0.5px solid #e6e6e6;
 }
 
 .editBox {
@@ -135,6 +168,7 @@
 
 .hasEmail {
     margin-right: 1px;
+    margin-left: 20px;
 }
 
 .noEmail {
@@ -142,7 +176,8 @@
 }
 
 .noEmail span {
-    margin-left: 90px;
+    margin-right: 20px;
+    margin-left: 33px;
 }
 
 @media (max-width: 900px) {
@@ -182,9 +217,10 @@
     }
     .noEmail span {
         margin-left: 128px;
+        margin-right: 0;
     }
     .hasEmail {
-        margin-left: 65px;
+        margin-left: 58px;
     }
     .emailInputBox {
         margin: 0 auto;

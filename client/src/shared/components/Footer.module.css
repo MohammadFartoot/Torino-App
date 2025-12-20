@@ -3,6 +3,10 @@
     margin: 0 120px;
 }
 
+html[data-theme="dark"] .topBorder {
+    border: 1px solid #D8FFE1;
+}
+
 .container {
     display: flex;
     align-items: center;
@@ -64,6 +68,22 @@
     cursor: pointer;
 }
 
+html[data-theme="dark"] .torinoBox h3 {
+    color: #e6e6e6;
+}
+
+html[data-theme="dark"] .torinoBox ul li {
+    color: #e6e6e6;
+}
+
+html[data-theme="dark"] .customerBox h3 {
+    color: #e6e6e6;
+}
+
+html[data-theme="dark"] .customerBox ul li {
+    color: #e6e6e6;
+}
+
 .informationBox {
     display: flex;
     flex-direction: column;
@@ -73,6 +93,10 @@
 .torinoLogo {
     margin-bottom: 20px;
     margin-right: 390px;
+}
+
+html[data-theme="dark"] .torinoLogo {
+    border-radius: 15px;
 }
 
 .supportBox {
@@ -95,6 +119,10 @@
     color: #282828;
 }
 
+html[data-theme="dark"] .supportBox p {
+    color: #e6e6e6;
+}
+
 
 .logoBox {
     display: flex;
@@ -110,6 +138,10 @@
     border: 1px solid #00000022;
 }
 
+html[data-theme="dark"] .belowBorder {
+    border: 1px solid #D8FFE1;
+}
+
 .copyRight {
     display: flex;
     justify-content: center;
@@ -118,6 +150,10 @@
     font-size: 15px;
     color: #282828;
     margin: 20px auto;
+}
+
+html[data-theme="dark"] .copyRight {
+    color: #e6e6e6;
 }
 
 @media (max-width: 1200px) {
@@ -160,6 +196,15 @@
                 to right,
                 #00000040 0,
                 #00000040 8px,
+                transparent 1px,
+                transparent 20px
+        ) 1;
+    }
+    html[data-theme="dark"] .dashTopBorder {
+        border-image: repeating-linear-gradient(
+                to right,
+                #D8FFE1 0,
+                #D8FFE1 8px,
                 transparent 1px,
                 transparent 20px
         ) 1;

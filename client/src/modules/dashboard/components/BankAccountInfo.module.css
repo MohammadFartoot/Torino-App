@@ -7,6 +7,11 @@
     border: 1px solid #00000033;
 }
 
+html[data-theme="dark"] .cardInfoBox {
+    border: none;
+    border-bottom: 2px solid #23913c;
+}
+
 .expandForm {
     width: 872px;
     height: 195px;
@@ -25,6 +30,10 @@
     font-weight: 400;
     font-size: 16px;
     color: #000000;
+}
+
+html[data-theme="dark"] .cardInfoTitle {
+    color: #e6e6e6;
 }
 
 .userEditBox {
@@ -95,6 +104,10 @@
     color: #282828;
 }
 
+html[data-theme="dark"] .shebaCodeInput {
+    background-color: #e6e6e6;
+}
+
 .shebaCodeInput:focus {
     outline: none;
 }
@@ -116,6 +129,10 @@
     font-weight: 400;
     font-size: 14px;
     color: #282828;
+}
+
+html[data-theme="dark"] .cardNumberInput {
+    background-color: #e6e6e6;
 }
 
 .cardNumberInput:focus {
@@ -141,6 +158,10 @@
     color: #282828;
 }
 
+html[data-theme="dark"] .accountNumberInput {
+    background-color: #e6e6e6;
+}
+
 .accountNumberInput:focus {
     outline: none;
 }
@@ -156,6 +177,10 @@
     width: 870px;
     border: 0.5px solid #00000033;
     margin-top: 5px;
+}
+
+html[data-theme="dark"] .border {
+    border: none;
 }
 
 .btnBox {
@@ -195,6 +220,10 @@
     cursor: pointer;
 }
 
+html[data-theme="dark"] .btnBox button:last-child {
+    background-color: #121212;
+}
+
 .secondCardInnerBox {
     display: flex;
     align-items: center;
@@ -214,6 +243,10 @@
     color: #000000;
 }
 
+html[data-theme="dark"] .shebaNumber p:first-child {
+    color: #e6e6e6;
+}
+
 .shebaNumber p:last-child {
     font-family: Vazir-FD-WOL, Arial, Helvetica, sans-serif;
     font-weight: 400;
@@ -222,12 +255,20 @@
     margin-left: 15px;
 }
 
+html[data-theme="dark"] .shebaNumber p:last-child {
+    color: #e6e6e6;
+}
+
 .shebaNumber span {
     width: 13px;
     height: 0;
     border: 0.5px solid #282828;
     margin-right: 69px;
     margin-left: 117px;
+}
+
+html[data-theme="dark"] .shebaNumber span {
+    border: 0.5px solid #e6e6e6;
 }
 
 .cardNumber {
@@ -244,6 +285,10 @@
     color: #000000;
 }
 
+html[data-theme="dark"] .cardNumber p:first-child {
+    color: #e6e6e6;
+}
+
 .cardNumber p:last-child {
     font-family: Vazir-FD-WOL, Arial, Helvetica, sans-serif;
     font-weight: 400;
@@ -251,11 +296,19 @@
     color: #282828;
 }
 
+html[data-theme="dark"] .cardNumber p:last-child {
+    color: #e6e6e6;
+}
+
 .cardNumber span {
     width: 13px;
     height: 0;
     border: 0.5px solid #282828;
     margin-right: 52px;
+}
+
+html[data-theme="dark"] .cardNumber span {
+    border: 0.5px solid #e6e6e6;
 }
 
 .thirdCardInnerBox {
@@ -277,6 +330,10 @@
     color: #000000;
 }
 
+html[data-theme="dark"] .bankAccountNumber p:first-child {
+    color: #e6e6e6;
+}
+
 .bankAccountNumber p:last-child {
     font-family: Vazir-FD-WOL, Arial, Helvetica, sans-serif;
     font-weight: 400;
@@ -284,11 +341,19 @@
     color: #282828;
 }
 
+html[data-theme="dark"] .bankAccountNumber p:last-child {
+    color: #e6e6e6;
+}
+
 .bankAccountNumber span {
     width: 13px;
     height: 0;
     border: 0.5px solid #282828;
     margin-right: 53px;
+}
+
+html[data-theme="dark"] .bankAccountNumber span {
+    border: 0.5px solid #e6e6e6;
 }
 
 .error {

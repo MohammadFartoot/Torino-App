@@ -52,9 +52,9 @@
 .dropDownBox {
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    gap: 12px;
     width: 246px;
-    height: 152px;
+    height: 170px;
     border-radius: 11px;
     background-color: #FFFFFF;
     box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.2);
@@ -62,9 +62,13 @@
     position: absolute;
     top: 95%;
     left: 16%;
-    /*top: 73px;*/
-    /*left: 290px;*/
     animation: dropDownMenu 0.8s cubic-bezier(0.22, 0.61, 0.36, 1) forwards;
+}
+
+
+html[data-theme="dark"] .dropDownBox {
+    background-color: #161616;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 1.1);
 }
 
 .smallProfileBox {
@@ -94,10 +98,47 @@
     color: #10411B;
 }
 
+.themeBox {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.lightModeIcon {
+    margin-right: 11px;
+}
+
+html[data-theme="dark"] .lightModeIcon {
+    filter: brightness(0) invert(1);
+}
+
+.darkModeIcon {
+    margin-right: 10px;
+}
+
+html[data-theme="dark"] .darkModeIcon {
+    filter: brightness(0) invert(1);
+}
+
+.themeBox p {
+    font-family: YekanBakh-Regular, Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    color: #282828;
+}
+
+html[data-theme="dark"] .themeBox p {
+    color: #e6e6e6;
+}
+
 .accountInfoBox {
     display: flex;
     align-items: center;
     gap: 10px;
+}
+
+html[data-theme="dark"] .accountInfo {
+    filter: brightness(0) invert(1);
 }
 
 .accountInfo {
@@ -112,6 +153,10 @@
     text-decoration: none;
 }
 
+html[data-theme="dark"] .toAccount {
+    color: #e6e6e6;
+}
+
 .border {
     width: 222px;
     height: 0;
@@ -119,10 +164,18 @@
     margin-right: 11px;
 }
 
+html[data-theme="dark"] .border {
+    border: 0.5px solid #e6e6e6;
+}
+
 .logOutBox {
     display: flex;
     align-items: center;
     gap: 10px;
+}
+
+html[data-theme="dark"] .logOutBox img {
+    filter: brightness(1.2);
 }
 
 .logOut {
@@ -134,6 +187,10 @@
     font-weight: 400;
     font-size: 14px;
     color: #D40000;
+}
+
+html[data-theme="dark"] .logOutBox p {
+    color: #FF0000;
 }
 
 @media (max-width: 1440px) {
@@ -193,8 +250,8 @@
     }
     .dropDownBox {
         width: 200px;
-        height: 114px;
-        gap: 8px;
+        height: 130px;
+        gap: 6px;
         position: absolute;
         top: 90%;
         left: 3%;
@@ -209,6 +266,17 @@
     }
     .smallProfileBox p {
         font-size: 14px;
+    }
+    .lightModeIcon {
+        width: 14px;
+        height: 14px;
+    }
+    .darkModeIcon {
+        width: 14px;
+        height: 14px;
+    }
+    .themeBox p {
+        font-size: 12px;
     }
     .accountInfo {
         width: 16px;
@@ -253,8 +321,6 @@
     }
     .dropDownBox {
         width: 157px;
-        height: 114px;
-        gap: 8px;
         position: absolute;
         top: 63px;
         left: 17px;

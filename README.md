@@ -24,6 +24,8 @@ The application uses JWT-based Authentication & Authorization to ensure secure a
 
 - ✅ Ordered Tour Listing
 
+- 🌙 Light & Dark mode support
+
 ---
 
 ## 🧑🏻‍🔧 Tech Stack

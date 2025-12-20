@@ -6,6 +6,9 @@
     .hamburgerMenuIcon {
         display: inline-block;
     }
+    html[data-theme="dark"] .hamburgerMenuIcon {
+        filter: brightness(0) invert(1);
+    }
     .backDrop {
         position: fixed;
         inset: 0;
@@ -30,6 +33,10 @@
         animation: slideMenu 0.8s cubic-bezier(0.22, 0.61, 0.36, 1) forwards;
         z-index: 2;
     }
+    html[data-theme="dark"] .menuContainer {
+        background-color: #121212;
+        box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
+    }
     .mainPageBtn {
         display: flex;
         align-items: center;
@@ -50,11 +57,17 @@
         cursor: pointer;
         text-decoration: none;
     }
+    html[data-theme="dark"] .tourServices img {
+        filter: brightness(0) invert(1);
+    }
     .tourServices p {
         font-family: YekanBakh-Regular, Arial, Helvetica, sans-serif;
         font-weight: 400;
         font-size: 16px;
         color: #282828;
+    }
+    html[data-theme="dark"] .tourServices p {
+        color: #e6e6e6;
     }
     .aboutUs {
         display: flex;
@@ -63,11 +76,17 @@
         cursor: pointer;
         text-decoration: none;
     }
+    html[data-theme="dark"] .aboutUs img {
+        filter: brightness(0) invert(1);
+    }
     .aboutUs p {
         font-family: YekanBakh-Regular, Arial, Helvetica, sans-serif;
         font-weight: 400;
         font-size: 16px;
         color: #282828;
+    }
+    html[data-theme="dark"] .aboutUs p {
+        color: #e6e6e6;
     }
     .callWithUs {
         display: flex;
@@ -76,11 +95,17 @@
         cursor: pointer;
         text-decoration: none;
     }
+    html[data-theme="dark"] .callWithUs img {
+        filter: brightness(0) invert(1);
+    }
     .callWithUs p {
         font-family: YekanBakh-Regular, Arial, Helvetica, sans-serif;
         font-weight: 400;
         font-size: 16px;
         color: #282828;
+    }
+    html[data-theme="dark"] .callWithUs p {
+        color: #e6e6e6;
     }
     @keyframes slideMenu {
         from {

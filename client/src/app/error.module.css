@@ -21,11 +21,19 @@
     color: #282828;
 }
 
+html[data-theme="dark"] .textBox p:first-child {
+    color: #e6e6e6;
+}
+
 .textBox p:last-child {
     font-family: YekanBakh-SemiBold, Arial, Helvetica, sans-serif;
     font-weight: 600;
     font-size: 24px;
     color: #282828;
+}
+
+html[data-theme="dark"] .textBox p:last-child {
+    color: #e6e6e6;
 }
 
 .imageBox {

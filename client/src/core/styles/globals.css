@@ -76,7 +76,13 @@
 }
 
 :root {
-    --background: #ffffff;
+    --bg-main: #ffffff;
+    --bg-secondary: #f4f4f4;
+}
+
+html[data-theme="dark"] {
+    --bg-main: #121212;
+    --bg-secondary: #121212;
 }
 
 * {
@@ -85,9 +91,10 @@
     margin: 0;
 }
 
-html, body {
+body {
     max-width: 1800px;
     height: 100%;
+    background-color: var(--bg-main);
     scroll-behavior: smooth;
 }
 
@@ -99,18 +106,19 @@ html, body {
 
 .main-white {
     flex: 1;
-    background-color: #ffffff;
+    background-color: var(--bg-main);
 }
 
 .main-gray {
     flex: 1;
-    background-color: #f4f4f4;
+    background-color: var(--bg-secondary);
 }
 
 .custom-date-input {
     font-family: YekanBakh-Regular, Arial, Helvetica, sans-serif;
     font-weight: 800;
     font-size: 17px;
+    background-color: transparent;
     outline: none;
     border: none;
     cursor: pointer;
@@ -120,19 +128,19 @@ html, body {
 
 @media (max-width: 900px) {
     .main-white, .main-gray {
-        background-color: #FFFFFF;
+        background-color: var(--bg-main);
     }
 }
 
 @media (max-width: 768px) {
     .main-white, .main-gray {
-        background-color: #FFFFFF;
+        background-color: var(--bg-main);
     }
 }
 
 @media (max-width: 480px) {
     .main-white, .main-gray {
-        background-color: #FFFFFF;
+        background-color: var(--bg-main);
     }
 }
 

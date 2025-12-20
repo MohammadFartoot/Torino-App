@@ -8,6 +8,11 @@
     gap: 10px;
 }
 
+html[data-theme="dark"] .userInfoBox {
+    border: none;
+    border-bottom: 2px solid #23913c;
+}
+
 .expandForm {
     width: 872px;
     height: 240px;
@@ -26,6 +31,10 @@
     font-weight: 900;
     font-size: 16px;
     color: #000000;
+}
+
+html[data-theme="dark"] .userInfoTitle {
+    color: #e6e6e6;
 }
 
 .userEditBox {
@@ -68,6 +77,10 @@
     color: #282828;
 }
 
+html[data-theme="dark"] .fullNameInput {
+    background-color: #e6e6e6;
+}
+
 .fullNameInput:focus {
     outline: none;
 }
@@ -89,6 +102,10 @@
     font-weight: 400;
     font-size: 14px;
     color: #282828;
+}
+
+html[data-theme="dark"] .nationalCodeInput {
+    background-color: #e6e6e6;
 }
 
 .nationalCodeInput:focus {
@@ -138,6 +155,10 @@
         color: #282828;
 }
 
+html[data-theme="dark"] .birthDateInput {
+    background-color: #e6e6e6;
+}
+
 .genderInputWrapper {
     position: relative;
     display: flex;
@@ -156,6 +177,13 @@
     background-color: #FFFFFF;
 }
 
+html[data-theme="dark"] .genderInputWrapper label {
+    bottom: 33px;
+    color: #e6e6e6;
+    background-color: #121212;
+    border-radius: 5px;
+}
+
 .genderInput {
     width: 255px;
     height: 45px;
@@ -168,6 +196,10 @@
     font-size: 14px;
     color: #282828;
     cursor: pointer;
+}
+
+html[data-theme="dark"] .genderInput {
+    background-color: #e6e6e6;
 }
 
 .genderInput:focus {
@@ -210,6 +242,10 @@
     margin-top: 20px;
 }
 
+html[data-theme="dark"] .border {
+    border: none;
+}
+
 .btnBox {
     display: flex;
     justify-content: flex-end;
@@ -247,6 +283,10 @@
     cursor: pointer;
 }
 
+html[data-theme="dark"] .btnBox button:last-child {
+    background-color: #121212;
+}
+
 .secondInnerBox {
     display: flex;
     align-items: center;
@@ -266,6 +306,10 @@
     color: #000000;
 }
 
+html[data-theme="dark"] .fullName p:first-child {
+    color: #e6e6e6;
+}
+
 .fullName p:last-child {
     font-family: YekanBakh-SemiBold, Arial, Helvetica, sans-serif;
     font-weight: 600;
@@ -273,11 +317,19 @@
     color: #282828;
 }
 
+html[data-theme="dark"] .fullName p:last-child {
+    color: #e6e6e6;
+}
+
 .fullName span {
     width: 13px;
     height: 0;
     border: 0.5px solid #282828;
     margin-right: 60px;
+}
+
+html[data-theme="dark"] .fullName span {
+    border: 0.5px solid #e6e6e6;
 }
 
 .nationalCode {
@@ -294,6 +346,10 @@
     color: #000000;
 }
 
+html[data-theme="dark"] .nationalCode p:first-child {
+    color: #e6e6e6;
+}
+
 .nationalCode p:last-child {
     font-family: Vazir-FD-WOL, Arial, Helvetica, sans-serif;
     font-size: 14px;
@@ -301,11 +357,19 @@
     color: #282828;
 }
 
+html[data-theme="dark"] .nationalCode p:last-child {
+    color: #e6e6e6;
+}
+
 .nationalCode span {
     width: 13px;
     height: 0;
     border: 0.5px solid #282828;
     margin-right: 60px;
+}
+
+html[data-theme="dark"] .nationalCode span {
+    border: 0.5px solid #e6e6e6;
 }
 
 .thirdInnerBox {
@@ -327,6 +391,10 @@
     color: #000000;
 }
 
+html[data-theme="dark"] .gender p:first-child {
+    color: #e6e6e6;
+}
+
 .gender p:last-child {
     font-family: YekanBakh-SemiBold, Arial, Helvetica, sans-serif;
     font-weight: 600;
@@ -334,11 +402,19 @@
     color: #282828;
 }
 
+html[data-theme="dark"] .gender p:last-child {
+    color: #e6e6e6;
+}
+
 .gender span {
     width: 13px;
     height: 0;
     border: 0.5px solid #282828;
     margin-right: 57px;
+}
+
+html[data-theme="dark"] .gender span {
+    border: 0.5px solid #e6e6e6;
 }
 
 .noBirthDate {
@@ -355,6 +431,10 @@
     color: #000000;
 }
 
+html[data-theme="dark"] .noBirthDate p:first-child {
+    color: #e6e6e6;
+}
+
 .noBirthDate p:last-child {
     font-family: Vazir-FD-WOL, Arial, Helvetica, sans-serif;
     font-size: 14px;
@@ -362,10 +442,18 @@
     color: #282828;
 }
 
+html[data-theme="dark"] .noBirthDate p:last-child {
+    color: #e6e6e6;
+}
+
 .noBirthDate span {
     width: 13px;
     height: 0;
     border: 0.5px solid #282828;
+}
+
+html[data-theme="dark"] .noBirthDate span {
+    border: 0.5px solid #e6e6e6;
 }
 
 .birthDate {
@@ -382,11 +470,19 @@
     color: #000000;
 }
 
+html[data-theme="dark"] .birthDate p:first-child {
+    color: #e6e6e6;
+}
+
 .birthDate p:last-child {
     font-family: Vazir-FD-WOL, Arial, Helvetica, sans-serif;
     font-size: 14px;
     font-weight: 400;
     color: #282828;
+}
+
+html[data-theme="dark"] .birthDate p:last-child {
+    color: #e6e6e6;
 }
 
 .error {
