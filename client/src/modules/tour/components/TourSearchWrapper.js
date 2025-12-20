@@ -1,6 +1,5 @@
 "use client"
 
-
 import TourSearch from "./TourSearch";
 import MobileTourSearch from "./MobileTourSearch";
 import {useGetTour} from "@/tour/hooks/useGetTour";

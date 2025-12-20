@@ -7,6 +7,10 @@
     cursor: pointer;
 }
 
+html[data-theme="dark"] .img {
+    filter: invert(47%) sepia(78%) saturate(462%) hue-rotate(82deg) brightness(92%) contrast(87%);
+}
+
 .title {
     display: flex;
     justify-content: center;
@@ -15,6 +19,10 @@
     font-size: 28px;
     color: #282828;
     margin-top: 5px;
+}
+
+html[data-theme="dark"] .title {
+    color: #e6e6e6;
 }
 
 .text {
@@ -27,12 +35,20 @@
     margin: 10px 0;
 }
 
+html[data-theme="dark"] .text {
+    color: #e6e6e6;
+}
+
 .text span {
     font-family: Vazir-FD-WOL, Arial, Helvetica, sans-serif;
     font-weight: 400;
     font-size: 16px;
     color: #282828;
     margin: 0 5px;
+}
+
+html[data-theme="dark"] .text span {
+    color: #28A745;
 }
 
 .input {
@@ -53,6 +69,10 @@
     font-weight: 100;
     font-size: 14px;
     color: gray;
+}
+
+html[data-theme="dark"] .resend {
+    color: #D9D9D9;
 }
 
 .resend span {
@@ -81,6 +101,12 @@
     color: #FFFFFF;
     border: 1px solid #00000040;
     cursor: pointer;
+}
+
+html[data-theme="dark"] .btn {
+    background-color: #121212;
+    color: #28A745;
+    border: 1px solid #28A745;
 }
 
 @media (max-width: 480px) {

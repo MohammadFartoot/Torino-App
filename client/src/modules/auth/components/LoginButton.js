@@ -8,6 +8,8 @@ import smallProfile from "@/auth/images/smallprofile.png";
 import account from "@/auth/images/pr.png"
 import sigIn from "@/auth/images/sign in button.png"
 import logOut from "@/auth/images/filogout.png"
+import moon from "@/auth/images/moon-8.png"
+import sun from "@/auth/images/sun-2.png"
 import {useAuth} from "@/auth/context/AuthContextProvider";
 import {useGetUserData} from "@/tour/hooks/useGetUserData";
 import {useRef} from "react";
@@ -20,10 +22,11 @@ import useClickOutside from "@/shared/hooks/useClickOutside";
 
 function LoginButton() {
 
-    const {state, openAuthModal, toggleDropDown, closeDropDown} = useAuth();
+    const {state, openAuthModal, toggleDropDown, closeDropDown, toggleTheme} = useAuth();
     const accountRef = useRef(null);
     const queryClient = useQueryClient();
     const router = useRouter();
+
 
     const {data} = useGetUserData();
 
@@ -61,6 +64,32 @@ function LoginButton() {
                                 alt="user-icon"
                             />
                             <p>{data?.mobile}</p>
+                        </div>
+                        <div className={styles.themeBox} onClick={() => toggleTheme()}>
+                            {state.theme === "dark"
+                                ? (
+                                    <>
+                                        <Image
+                                            className={styles.lightModeIcon}
+                                            src={sun}
+                                            width={19}
+                                            height={19}
+                                            alt="sun-icon"
+                                        />
+                                        <p>حالت روشن</p>
+                                    </>
+                                ) : (
+                                    <>
+                                        <Image
+                                            className={styles.darkModeIcon}
+                                            src={moon}
+                                            width={18}
+                                            height={18}
+                                            alt="moon-icon"
+                                        />
+                                        <p>حالت تاریک</p>
+                                    </>
+                                )}
                         </div>
                         <div className={styles.accountInfoBox} onClick={() => closeDropDown()}>
                             <Image

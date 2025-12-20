@@ -7,6 +7,13 @@
     border-radius: 10px;
 }
 
+html[data-theme="dark"] .container {
+    background-color: #121212;
+    border: none;
+    border-top: 2px solid #23913c;
+    border-left: 2px solid #23913c;
+}
+
 .mobileContainer {
     display: none;
 }
@@ -28,12 +35,20 @@
     color: #000000;
 }
 
+html[data-theme="dark"] .title {
+    color: #e6e6e6;
+}
+
 .options {
     font-family: Vazir-Light-FD-WOL, Arial, Helvetica, sans-serif;
     font-weight: 900;
     font-size: 20px;
     color: #282828;
     margin: 15px 0;
+}
+
+html[data-theme="dark"] .options {
+    color: lightgray;
 }
 
 .description {
@@ -48,6 +63,10 @@
     gap: 10px;
 }
 
+html[data-theme="dark"] .userBox img {
+    filter: brightness(0) invert(1);
+}
+
 .userBox p {
     font-family: YekanBakh-Light, Arial, Helvetica, sans-serif;
     font-weight: 900;
@@ -55,10 +74,18 @@
     color: #7D7D7D;
 }
 
+html[data-theme="dark"] .userBox p {
+    color: #e6e6e6;
+}
+
 .planBox {
     display: flex;
     align-items: center;
     gap: 10px;
+}
+
+html[data-theme="dark"] .planBox img {
+    filter: brightness(0) invert(1);
 }
 
 .planBox p {
@@ -68,10 +95,18 @@
     color: #7D7D7D;
 }
 
+html[data-theme="dark"] .planBox p {
+    color: #e6e6e6;
+}
+
 .medalBox {
     display: flex;
     align-items: center;
     gap: 10px;
+}
+
+html[data-theme="dark"] .medalBox img {
+    filter: brightness(0) invert(1);
 }
 
 .medalBox p {
@@ -79,6 +114,10 @@
     font-weight: 900;
     font-size: 20px;
     color: #7D7D7D;
+}
+
+html[data-theme="dark"] .medalBox p {
+    color: #e6e6e6;
 }
 
 .reserveBox {
@@ -103,6 +142,10 @@
     margin: 0 5px;
 }
 
+html[data-theme="dark"] .reserveBox span {
+    color: #D9D9D9;
+}
+
 .detailsContainer {
     display: flex;
     margin: 10px 25px;
@@ -121,10 +164,18 @@
     color: #000000;
 }
 
+html[data-theme="dark"] .originBox p {
+    color: #D9D9D9;
+}
+
 .origin {
     display: flex;
     align-items: center;
     gap: 10px;
+}
+
+html[data-theme="dark"] .origin img {
+    filter: brightness(0) invert(1);
 }
 
 .origin p {
@@ -134,12 +185,20 @@
     color: #444444;
 }
 
+html[data-theme="dark"] .origin p {
+    color: #e6e6e6;
+}
+
 .border {
     width: 84px;
     height: 1px;
     border: 1px solid #00000030;
     rotate: -90deg;
     margin: 38px 10px;
+}
+
+html[data-theme="dark"] .border {
+    border: 1px solid darkgrey;
 }
 
 .startDateBox {
@@ -155,10 +214,18 @@
     color: #000000;
 }
 
+html[data-theme="dark"] .startDateBox p {
+    color: #D9D9D9;
+}
+
 .startDate {
     display: flex;
     align-items: center;
     gap: 10px;
+}
+
+html[data-theme="dark"] .startDateBox img {
+    filter: brightness(0) invert(1);
 }
 
 .startDate p {
@@ -166,6 +233,10 @@
     font-weight: 400;
     font-size: 18px;
     color: #444444;
+}
+
+html[data-theme="dark"] .startDate p {
+    color: #e6e6e6;
 }
 
 .endDateBox {
@@ -181,10 +252,18 @@
     color: #000000;
 }
 
+html[data-theme="dark"] .endDateBox p {
+    color: #D9D9D9;
+}
+
 .endDate {
     display: flex;
     align-items: center;
     gap: 10px;
+}
+
+html[data-theme="dark"] .endDate img {
+    filter: brightness(0) invert(1);
 }
 
 .endDate p {
@@ -192,6 +271,10 @@
     font-weight: 400;
     font-size: 18px;
     color: #444444;
+}
+
+html[data-theme="dark"] .endDate p {
+    color: #e6e6e6;
 }
 
 .vehicleBox {
@@ -207,10 +290,18 @@
     color: #000000;
 }
 
+html[data-theme="dark"] .vehicleBox p {
+    color: #D9D9D9;
+}
+
 .vehicle {
     display: flex;
     align-items: center;
     gap: 10px;
+}
+
+html[data-theme="dark"] .vehicle img {
+    filter: brightness(0) invert(1);
 }
 
 .vehicle p {
@@ -218,6 +309,10 @@
     font-weight: 400;
     font-size: 18px;
     color: #444444;
+}
+
+html[data-theme="dark"] .vehicle p {
+    color: #e6e6e6;
 }
 
 .capacityBox {
@@ -233,10 +328,18 @@
     color: #000000;
 }
 
+html[data-theme="dark"] .capacityBox p {
+    color: #D9D9D9;
+}
+
 .capacity {
     display: flex;
     align-items: center;
     gap: 10px;
+}
+
+html[data-theme="dark"] .capacity img {
+    filter: brightness(0) invert(1);
 }
 
 .capacity p {
@@ -246,12 +349,20 @@
     color: #444444;
 }
 
+html[data-theme="dark"] .capacity p {
+    color: #e6e6e6;
+}
+
 .capacityBorder {
     width: 84px;
     height: 1px;
     border: 1px solid #00000030;
     rotate: -90deg;
     margin: 38px 0;
+}
+
+html[data-theme="dark"] .capacityBorder {
+    border: 1px solid darkgrey;
 }
 
 .insuranceBox {
@@ -267,10 +378,18 @@
     color: #000000;
 }
 
+html[data-theme="dark"] .insuranceBox p {
+    color: #D9D9D9;
+}
+
 .insurance {
     display: flex;
     align-items: center;
     gap: 10px;
+}
+
+html[data-theme="dark"] .insurance img {
+    filter: brightness(0) invert(1);
 }
 
 .insurance p {
@@ -280,9 +399,16 @@
     color: #444444;
 }
 
+html[data-theme="dark"] .insurance p {
+    color: #e6e6e6;
+}
+
 @media (max-width: 1200px) {
     .container {
         width: 100%;
+        border: none;
+    }
+    html[data-theme="dark"] .container {
         border: none;
     }
     .tourContainer {
@@ -351,10 +477,15 @@
         gap: 140px;
     }
     .title {
+        margin: 0;
         font-size: 27px;
     }
     .options {
+        margin: 0;
         font-size: 17px;
+    }
+    html[data-theme="dark"] .options {
+        margin: -1px 0 0 0;
     }
     .description {
         display: flex;

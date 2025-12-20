@@ -1,4 +1,4 @@
-// File: /Users/mohammad/WebstormProjects/Next js/torino-app/client/src/app/profile/page.js
+// File: /Users/mohammad/Downloads/Torino-App/client/src/app/profile/page.js
 import * as entry from '../../../../src/app/profile/page.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 

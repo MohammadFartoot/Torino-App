@@ -1,7 +1,8 @@
 "use client"
 
-import {createContext, useContext, useReducer} from "react";
+import {createContext, useContext, useReducer, useEffect} from "react";
 import {initialState, authReducer} from "./authReducer";
+
 
 export const AuthContext = createContext();
 export const useAuth = () => {
@@ -12,10 +13,22 @@ export const useAuth = () => {
     return context;
 }
 
+const init = () => {
+
+    if (typeof window === "undefined") {
+        return initialState;
+    }
+
+    const savedTheme = localStorage.getItem("theme");
+    return {
+        ...initialState,
+        theme: savedTheme ? savedTheme : initialState.theme
+    };
+};
 
 function AuthContextProvider({children}) {
 
-    const [state, dispatch] = useReducer(authReducer, initialState);
+    const [state, dispatch] = useReducer(authReducer, initialState, init);
 
     const openAuthModal = () => {
         dispatch({type: "OPEN_AUTH_MODAL"})
@@ -57,6 +70,16 @@ function AuthContextProvider({children}) {
         dispatch({type: "CLOSE_ALERT_MODAL"})
     }
 
+    const toggleTheme = () => {
+        dispatch({type: "TOGGLE_THEME"})
+    }
+
+    useEffect(() => {
+        document.documentElement.setAttribute("data-theme", state.theme);
+        localStorage.setItem("theme", state.theme);
+    }, [state.theme]);
+
+
     return (
         <AuthContext.Provider value={{
             state,
@@ -71,6 +94,7 @@ function AuthContextProvider({children}) {
             closeDropDown,
             openAlertModal,
             closeAlertModal,
+            toggleTheme,
         }}>
             {children}
         </AuthContext.Provider>

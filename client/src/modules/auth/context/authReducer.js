@@ -6,7 +6,10 @@ export const initialState = {
     timeLeft: 120,
     dropDown: false,
     alertModal: false,
+    theme: "light",
 }
+
+
 
 export const authReducer = (state, action) => {
     switch (action.type) {
@@ -60,6 +63,10 @@ export const authReducer = (state, action) => {
             return {
                 ...state,
                 alertModal: false,
+            }
+        case "TOGGLE_THEME":
+            return {
+                ...state, theme: state.theme === "light" ? "dark" : "light"
             }
         default:
             return state;

@@ -15,20 +15,22 @@ export const metadata = {
 
 export default function RootLayout({children}) {
 
-    return (<html lang="fa" dir="rtl">
-    <body cz-shortcut-listen="true">
-    <div className="layout">
-        <Provider>
-            <AuthModalContainer/>
-            <Header/>
-            <ClientMain>
-                {children}
-            </ClientMain>
-            <Footer/>
-        </Provider>
-        <Toaster/>
-    </div>
-    </body>
-    </html>);
+    return (
+        <html lang="fa" dir="rtl">
+        <body cz-shortcut-listen="true">
+        <div className="layout">
+            <Provider>
+                <AuthModalContainer/>
+                <Header/>
+                <ClientMain>
+                    {children}
+                </ClientMain>
+                <Footer/>
+            </Provider>
+            <Toaster/>
+        </div>
+        </body>
+        </html>
+    );
 }
 

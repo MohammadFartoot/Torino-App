@@ -24,6 +24,11 @@
 .noData p {
     font-family: YekanBakh-Bold, Arial, Helvetica, sans-serif;
     font-size: 29px;
+    color: #282828;
+}
+
+html[data-theme="dark"] .noData p {
+    color: #e6e6e6;
 }
 
 .link {
@@ -56,6 +61,16 @@
     border: 1px solid #00000033;
 }
 
+html[data-theme="dark"] .userInfoBox {
+    background: none;
+    box-shadow:
+            0 8px 24px rgba(0, 0, 0, 0.7),
+            0 5px 6px rgba(0, 0, 0, 0.4);
+    border: none;
+    border-top: 2px solid #23913c;
+    border-left: 2px solid #23913c;
+}
+
 .userInfo {
     display: flex;
     align-items: center;
@@ -63,11 +78,19 @@
     margin: 20px 20px 20px 0;
 }
 
+html[data-theme="dark"] .userInfo img {
+    filter: brightness(0) invert(1);
+}
+
 .userInfo p {
     font-family: Vazir-FD-WOL, Arial, Helvetica, sans-serif;
     font-weight: 400;
     font-size: 24px;
     color: #000000;
+}
+
+html[data-theme="dark"] .userInfo p {
+    color: #e6e6e6;
 }
 
 .allInputs {
@@ -89,6 +112,10 @@
     font-weight: 400;
     font-size: 14px;
     color: #000000;
+}
+
+html[data-theme="dark"] .nameInput {
+    background-color: #e6e6e6;
 }
 
 .nameInput:focus {
@@ -113,6 +140,10 @@
     font-weight: 400;
     font-size: 14px;
     color: #000000;
+}
+
+html[data-theme="dark"] .nationalCodeInput {
+    background-color: #e6e6e6;
 }
 
 .nationalCodeInput:focus {
@@ -149,6 +180,10 @@
     font-weight: 400;
     font-size: 14px;
     color: #000000;
+}
+
+html[data-theme="dark"] .birthDateInput {
+    background-color: #e6e6e6;
 }
 
 .birthDateInput:focus {
@@ -188,6 +223,10 @@
     cursor: pointer;
 }
 
+html[data-theme="dark"] .genderInput {
+    background-color: #e6e6e6;
+}
+
 .genderInput:focus {
     outline: none;
 }
@@ -204,8 +243,19 @@
     flex-direction: column;
     width: 307px;
     height: 228px;
+    margin-top: 1px;
     border-radius: 10px;
     background-color: #FFFFFF;
+}
+
+html[data-theme="dark"] .userBasket {
+    background: none;
+    box-shadow:
+            0 8px 24px rgba(0, 0, 0, 0.7),
+            0 5px 6px rgba(0, 0, 0, 0.4);
+    border: none;
+    border-top: 2px solid #23913c;
+    border-left: 2px solid #23913c;
 }
 
 .tourInfo {
@@ -223,11 +273,19 @@
     color: #000000;
 }
 
+html[data-theme="dark"] .tourInfo p:first-child {
+    color: #e6e6e6;
+}
+
 .tourInfo p:last-child {
     font-family: Vazir-Light-FD-WOL, Arial, Helvetica, sans-serif;
     font-weight: 900;
     font-size: 16px;
     color: #8D8D8D;
+}
+
+html[data-theme="dark"] .tourInfo p:last-child {
+    color: #c4c4c4;
 }
 
 .border {
@@ -239,6 +297,14 @@
             transparent 6px 12px
     );
     margin: 10px 0 10px 0;
+}
+
+html[data-theme="dark"] .border {
+    background: repeating-linear-gradient(
+            to right,
+            #e6e6e6 0 6px,
+            transparent 6px 12px
+    );
 }
 
 .priceInfo {
@@ -256,6 +322,10 @@
     color: #282828;
 }
 
+html[data-theme="dark"] .priceInfo p:first-child {
+    color: #e6e6e6;
+}
+
 .priceInfo p:last-child {
     font-family: Vazir-Medium-FD-WOL, Arial, Helvetica, sans-serif;
     font-weight: 500;
@@ -269,6 +339,10 @@
     font-size: 14px;
     color: #282828CC;
     margin: 0 5px;
+}
+
+html[data-theme="dark"] .priceInfo span {
+    color: #c4c4c4;
 }
 
 .btn {
@@ -364,6 +438,10 @@
 @media (max-width: 900px) {
     .container {
         gap: 0;
+    }
+    html[data-theme="dark"] .container {
+        gap: 20px;
+        margin-right: 15px;
     }
     .userInfoBox {
         width: 600px;

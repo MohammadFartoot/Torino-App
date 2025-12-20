@@ -15,6 +15,10 @@
     color: #282828;
 }
 
+html[data-theme="dark"] .textBox p {
+    color: #e6e6e6;
+}
+
 .linkBox {
     margin-top: 90px;
     margin-right: 40px;
@@ -31,6 +35,12 @@
     color: #28A745;
     background-color: #D8FFE1;
     text-decoration: none;
+}
+
+html[data-theme="dark"] .link {
+    color: #28A745;
+    background-color: #121212;
+    border: 1px solid #28A745;
 }
 
 .image {

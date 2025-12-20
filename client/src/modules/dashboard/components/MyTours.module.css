@@ -7,6 +7,11 @@
     border-radius: 10px;
 }
 
+html[data-theme="dark"] .container {
+    border: none;
+    border-top: 2px solid #23913c;
+}
+
 .mobileContainer {
     display: none;
 }
@@ -20,6 +25,11 @@
     margin: 15px auto 0 auto;
     border: 1px solid #00000033;
     border-radius: 10px;
+}
+
+html[data-theme="dark"] .tourBox {
+    /*border: 1px solid #bbbbbb;*/
+    border: 1px solid lightgray;
 }
 
 .firstInnerBox {
@@ -37,11 +47,19 @@
     gap: 8px;
 }
 
+html[data-theme="dark"] .tourTitle img {
+    filter: brightness(0) invert(1);
+}
+
 .tourTitle p {
     font-family: YekanBakh-Regular, Arial, Helvetica, sans-serif;
     font-weight: 400;
     font-size: 14px;
     color: #000000;
+}
+
+html[data-theme="dark"] .tourTitle p {
+    color: #e6e6e6;
 }
 
 .vehicleWrapper {
@@ -50,11 +68,19 @@
     gap: 8px;
 }
 
+html[data-theme="dark"] .vehicleWrapper img {
+    filter: brightness(0) invert(1);
+}
+
 .vehicleWrapper p {
     font-family: YekanBakh-Regular, Arial, Helvetica, sans-serif;
     font-weight: 400;
     font-size: 14px;
     color: #000000;
+}
+
+html[data-theme="dark"] .vehicleWrapper p {
+    color: #e6e6e6;
 }
 
 .upComing {
@@ -104,6 +130,10 @@
     color: #000000;
 }
 
+html[data-theme="dark"] .dateWrapper p:first-child {
+    color: #e6e6e6;
+}
+
 .dateWrapper span {
     width: 4px;
     height: 4px;
@@ -111,11 +141,19 @@
     background-color: #00000099;
 }
 
+html[data-theme="dark"] .dateWrapper span {
+    background-color: #b4b4b4;
+}
+
 .dateWrapper p:last-child {
     font-family: Vazir-FD-WOL, Arial, Helvetica, sans-serif;
     font-weight: 500;
     font-size: 14px;
     color: #00000099;
+}
+
+html[data-theme="dark"] .dateWrapper p:last-child {
+    color: #b4b4b4;
 }
 
 .secondDateWrapper {
@@ -131,11 +169,19 @@
     background-color: #00000099;
 }
 
+html[data-theme="dark"] .secondDateWrapper span {
+    background-color: #b4b4b4;
+}
+
 .secondDateWrapper p:first-child {
     font-family: YekanBakh-SemiBold, Arial, Helvetica, sans-serif;
     font-weight: 600;
     font-size: 14px;
     color: #000000;
+}
+
+html[data-theme="dark"] .secondDateWrapper p:first-child {
+    color: #e6e6e6;
 }
 
 .secondDateWrapper p:last-child {
@@ -145,9 +191,17 @@
     color: #00000099;
 }
 
+html[data-theme="dark"] .secondDateWrapper p:last-child {
+    color: #b4b4b4;
+}
+
 .borderLine {
     width: 830px;
     border: 0.5px solid #00000033;
+}
+
+html[data-theme="dark"] .borderLine {
+    border: none;
 }
 
 .thirdInnerBox {
@@ -170,6 +224,10 @@
     color: #00000080;
 }
 
+html[data-theme="dark"] .tourIdWrapper p:first-child {
+    color: #b4b4b4;
+}
+
 .tourIdWrapper p:last-child {
     font-family: Vazir-FD-WOL, Arial, Helvetica, sans-serif;
     font-weight: 500;
@@ -177,10 +235,18 @@
     color: #282828;
 }
 
+html[data-theme="dark"] .tourIdWrapper p:last-child {
+    color: #e6e6e6;
+}
+
 .secondBorderLine {
     width: 30px;
     rotate: -90deg;
     border: 0.5px solid #00000033;
+}
+
+html[data-theme="dark"] .secondBorderLine {
+    border: 0.5px solid lightgray;
 }
 
 .priceWrapper {
@@ -196,11 +262,19 @@
     color: #00000080;
 }
 
+html[data-theme="dark"] .priceWrapper p:first-child {
+    color: #b4b4b4;
+}
+
 .priceWrapper p:last-child {
     font-family: Vazir-FD-WOL, Arial, Helvetica, sans-serif;
     font-weight: 500;
     font-size: 14px;
     color: #282828;
+}
+
+html[data-theme="dark"] .priceWrapper p:last-child {
+    color: #e6e6e6;
 }
 
 .priceWrapper span {
@@ -209,6 +283,10 @@
     font-size: 11px;
     color: #00000080;
     margin: 0 5px;
+}
+
+html[data-theme="dark"] .priceWrapper span {
+    color: #b4b4b4;
 }
 
 @media (max-width: 900px) {
@@ -307,6 +385,10 @@
         color: #000000;
     }
 
+    html[data-theme="dark"] .dateWrapper div:first-child p {
+        color: #e6e6e6;
+    }
+
     .dateWrapper div:last-child {
         display: flex;
         flex-direction: row;
@@ -341,6 +423,10 @@
         font-family: YekanBakh-SemiBold, Arial, Helvetica, sans-serif;
         font-weight: 600;
         color: #000000;
+    }
+
+    html[data-theme="dark"] .secondDateWrapper div:first-child p {
+        color: #e6e6e6;
     }
 
     .secondDateWrapper div:last-child span {

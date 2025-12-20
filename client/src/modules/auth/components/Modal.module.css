@@ -16,9 +16,13 @@
     width: 561px;
     height: 362px;
     opacity: 1;
-    background-color: #FFFFFF;
+    background-color: var(--bg-main);
     border-radius: 20px;
     box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.2);
+}
+
+html[data-theme="dark"] .content {
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.8);
 }
 
 @media (max-width: 480px) {
