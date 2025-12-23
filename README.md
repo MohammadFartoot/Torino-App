@@ -44,6 +44,16 @@ The application uses JWT-based Authentication & Authorization to ensure secure a
 
 ---
 
+## 🛠️ Setup
+
+1. Copy `.env.example` contents & create a `.env` file in the `client` & `api` folder
+2. Replace `NEXT_PUBLIC_BASE_URL` with your backend URL
+3. Run `npm i` in `client` and `api`
+4. Start backend: `npm start`
+5. Start frontend: `npm run dev`
+
+---
+
 ## 📬 Contact
 
 Made with lots of ☕️️ by **Mohammad Fartoot**
