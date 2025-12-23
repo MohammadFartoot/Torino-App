@@ -1,0 +1,109 @@
+/*!****************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[7].use[3]!./src/modules/auth/components/Modal.module.css ***!
+  \****************************************************************************************************************************************************************************************************************************************************************************************/
+.Modal_popUp___NrkZ {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    -webkit-backdrop-filter: blur(3px);
+            backdrop-filter: blur(3px);
+    background: rgba(0, 0, 0, 0.4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 999;
+}
+
+.Modal_content__cBDy9 {
+    width: 561px;
+    height: 362px;
+    opacity: 1;
+    background-color: var(--bg-main);
+    border-radius: 20px;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.2);
+}
+
+html[data-theme="dark"] .Modal_content__cBDy9 {
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.8);
+}
+
+@media (max-width: 480px) {
+    .Modal_content__cBDy9 {
+        width: 358px;
+        height: 362px;
+    }
+}
+/*!*****************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[7].use[3]!./src/modules/auth/AuthProviderModal.module.css ***!
+  \*****************************************************************************************************************************************************************************************************************************************************************************************/
+.AuthProviderModal_wrapper__CCLR9 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.AuthProviderModal_wrapper__CCLR9 img {
+    filter: brightness(0) invert(1);
+}
+
+.AuthProviderModal_textBox___wDMW {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 50px auto;
+    gap: 10px;
+}
+
+.AuthProviderModal_textBox___wDMW p {
+    font-family: YekanBakh-SemiBold, Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    font-weight: 400;
+    color: #000000;
+}
+
+html[data-theme="dark"] .AuthProviderModal_textBox___wDMW p {
+    color: #e6e6e6;
+}
+
+.AuthProviderModal_link__jKvOA {
+    font-family: YekanBakh-SemiBold, Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    color: #FFFFFF;
+    background-color: #28A745;
+    padding: 10px 20px;
+    border-radius: 10px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+html[data-theme="dark"] .AuthProviderModal_link__jKvOA {
+    color: #28A745;
+    background-color: #121212;
+    border: 1px solid #28A745;
+}
+
+
+@media (max-width: 480px) {
+    .AuthProviderModal_wrapper__CCLR9 img {
+        width: 51px;
+        height: 51px;
+    }
+    .AuthProviderModal_textBox___wDMW {
+        gap: 30px;
+    }
+    .AuthProviderModal_textBox___wDMW p {
+        font-size: 20px;
+    }
+    .AuthProviderModal_link__jKvOA {
+        font-size: 19px;
+        padding: 8px 20px;
+    }
+}
+
+

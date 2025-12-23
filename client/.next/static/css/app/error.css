@@ -1,0 +1,74 @@
+/*!********************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[7].use[3]!./src/app/error.module.css ***!
+  \********************************************************************************************************************************************************************************************************************************************************************/
+.error_container__oicDm {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 70px auto 0 auto;
+    gap: 160px;
+}
+
+.error_textBox__4tm73 {
+    order: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-bottom: 120px;
+}
+
+.error_textBox__4tm73 p:first-child {
+    font-family: YekanBakh-SemiBold, Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    font-size: 36px;
+    color: #282828;
+}
+
+html[data-theme="dark"] .error_textBox__4tm73 p:first-child {
+    color: #e6e6e6;
+}
+
+.error_textBox__4tm73 p:last-child {
+    font-family: YekanBakh-SemiBold, Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+    color: #282828;
+}
+
+html[data-theme="dark"] .error_textBox__4tm73 p:last-child {
+    color: #e6e6e6;
+}
+
+.error_imageBox__vEblf {
+    order: 2;
+}
+
+@media (max-width: 768px) {
+    .error_container__oicDm {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 30px auto 0 auto;
+        gap: 0;
+    }
+    .error_textBox__4tm73 {
+        order: 2;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 170px;
+    }
+    .error_textBox__4tm73 p:first-child {
+        font-size: 24px;
+    }
+    .error_textBox__4tm73 p:last-child {
+        font-size: 16px;
+    }
+    .error_imageBox__vEblf {
+        order: 1;
+    }
+    .error_imageBox__vEblf img {
+        width: 322px;
+        height: 322px;
+    }
+}

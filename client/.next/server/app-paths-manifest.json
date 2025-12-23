@@ -1,7 +1,4 @@
 {
   "/page": "app/page.js",
-  "/_not-found/page": "app/_not-found/page.js",
-  "/tour/[tourId]/page": "app/tour/[tourId]/page.js",
-  "/checkout/basket/page": "app/checkout/basket/page.js",
   "/profile/page": "app/profile/page.js"
 }
